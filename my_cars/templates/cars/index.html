@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>
+  {{title}}
+</h1>
+<p> Мои случаные 5 машин </p>
+<ul>
+  {% for car in cars %}
+    <li>
+      <h2> {{car.mark}} {{car.model}} </h2>
+      <p> Тип кузова: {{car.body}} </p>
+      <p> Комплектация: {{car.complect}} </p>
+      <p> Год: {{car.year}} </p>
+      <p> О машине: {{car.description}} </p>
+    </li> 
+  {% endfor %}
+</ul>
+{% endblock %}
