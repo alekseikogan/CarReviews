@@ -8,6 +8,6 @@ urlpatterns = [
     path('addcar/', addcar, name='addcar'),
     path('login/', login, name='login'),
     path('tech/', tech, name='tech'),
-    path('cars/<int:car_id>/', show_car, name='show_car'),
-    path('mark/<int:mark_id>/', show_mark, name='show_mark'),
+    path('cars/<slug:car_slug>/', show_car, name='show_car'),
+    path('mark/<slug:mark_slug>/', show_mark, name='show_mark'),
 ]

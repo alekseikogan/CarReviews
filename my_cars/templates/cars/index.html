@@ -5,14 +5,14 @@
 </h1>
 <ul class="list-articles">
 {% for car in cars %}
+<h2> {{car.mark}} {{car.model}} </h2>
+<p> Тип кузова: {{car.body}} </p>
+<p> Комплектация: {{car.complect}} </p>
+<p> Год: {{car.year}} </p>
   {% if car.photo %}
 	  <img class="img-article-left.thumb" src="{{car.photo.url}}">
   {% endif %}
     <li>
-      <h2> {{car.mark}} {{car.model}} </h2>
-      <p> Тип кузова: {{car.body}} </p>
-      <p> Комплектация: {{car.complect}} </p>
-      <p> Год: {{car.year}} </p>
       {% autoescape on %}
       <p> {{car.description|linebreaks|truncatewords:45}} </p>
       {% endautoescape %}

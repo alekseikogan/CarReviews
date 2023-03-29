@@ -1,5 +1,6 @@
 from django.http import Http404, HttpResponse, HttpResponseNotFound
 from django.shortcuts import render, get_object_or_404
+from pytest import mark
 
 from .models import Car, Mark
 
@@ -24,32 +25,34 @@ def index(request):
     return render(request, 'cars/index.html', context)
 
 
-def show_car(request, car_id):
-    car = get_object_or_404(Car, pk=car_id)
-
+def show_car(request, car_slug):
+    car = get_object_or_404(Car, slug=car_slug)
+    marks = Mark.objects.all()
     context = {
-            'menu': menu,
-            'title': str(car),
             'car': car,
-            'mark_selected': car_id
+            'menu': menu,
+            'title': car,
+            'marks': marks,
+            'mark_selected': car.mark.slug
             }
     return render(request, 'cars/car.html', context)
 
 
-def show_mark(request, mark_id):
-    cars = Car.objects.filter(mark_id=mark_id)
+def show_mark(request, mark_slug):
     marks = Mark.objects.all()
+    marks_forslug = Mark.objects.filter(slug=mark_slug)
+    cars = Car.objects.filter(mark=marks_forslug[0].id)
 
     if len(cars) == 0:
         raise Http404()
 
-    current_mark = Mark.objects.get(pk=mark_id).name
+    current_mark = get_object_or_404(Mark, slug=mark_slug).name
     context = {
             'menu': menu,
-            'title': f'Список машин {current_mark}',
+            'title': f'Список машин марки {current_mark}',
             'cars': cars,
             'marks': marks,
-            'mark_selected': mark_id,
+            'mark_selected': mark_slug,
             }
     return render(request, 'cars/index.html', context)
 

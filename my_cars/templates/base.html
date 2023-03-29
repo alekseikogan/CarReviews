@@ -42,7 +42,7 @@
 {% endif %}
 
 {% for m in marks %}
-	{% if m.pk == mark_selected %}
+	{% if m.slug == mark_selected %}
 		<li class="selected">{{m.name}}</li>
 	{% else %}
 		<li><a href="{{m.get_absolute_url}}">{{m.name}}</a></li>

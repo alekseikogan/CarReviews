@@ -8,8 +8,13 @@ from django.urls import reverse
 class Body(models.Model):
     name = models.CharField(
         max_length=50,
-        default='Тип кузова не выбран',
         verbose_name='Тип кузова'
+    )
+    slug = models.SlugField(
+        max_length=100,
+        unique=True,
+        db_index=True,
+        verbose_name='URL'
     )
 
     class Meta:
@@ -27,6 +32,12 @@ class Mark(models.Model):
         max_length=50,
         verbose_name='Марка'
     )
+    slug = models.SlugField(
+        max_length=100,
+        unique=True,
+        db_index=True,
+        verbose_name='URL'
+    )
 
     class Meta:
         ordering = ('name',)
@@ -37,7 +48,7 @@ class Mark(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("show_mark", kwargs={"mark_id": self.pk})
+        return reverse('show_mark', kwargs={'mark_slug': self.slug})
 
 
 # Машина
@@ -45,15 +56,19 @@ class Car(models.Model):
     mark = models.ForeignKey(
         Mark,
         blank=True,
-        null=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.PROTECT,
         related_name='cars',
         verbose_name='Марка',
         help_text='Кузов автомобиля'
     )
+    slug = models.SlugField(
+        max_length=100,
+        unique=True,
+        db_index=True,
+        verbose_name='URL'
+    )
     model = models.CharField(
         max_length=100,
-        default='Модель не выбрана',
         verbose_name='Модель')
     complect = models.CharField(
         max_length=70,
@@ -62,8 +77,7 @@ class Car(models.Model):
     body = models.ForeignKey(
         Body,
         blank=True,
-        null=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.PROTECT,
         related_name='cars',
         verbose_name='Кузов',
         help_text='Кузов автомобиля'
@@ -86,4 +100,4 @@ class Car(models.Model):
         return (f'{self.mark} {self.model}')
 
     def get_absolute_url(self):
-        return reverse("show_car", kwargs={"car_id": self.pk})
+        return reverse('show_car', kwargs={'car_slug': self.slug})
