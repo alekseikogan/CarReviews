@@ -15,9 +15,8 @@
 {% block mainmenu %}
 <div class="header">
     <ul id="mainmenu" class="mainmenu">
-    <li><a href="{% url 'home' %}">
-		<img src="{% static 'images/logotip.png' %}"/>
-</a></li>
+	<a href="{% url 'home' %}"><li class="logo"></li>
+	</a>
 
 {% for m in menu %}
 	{% if not forloop.last %}

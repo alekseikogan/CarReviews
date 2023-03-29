@@ -6,7 +6,7 @@ SECRET_KEY = '0cip#lmhrb=w#fjuc9c4_$5f0+-e-hgmx2_!#yva&kxz0bjgno'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 INSTALLED_APPS = [
@@ -88,9 +88,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
+# когда убираю STATIC_ROOT работает статика
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = []
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

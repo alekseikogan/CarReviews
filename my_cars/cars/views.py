@@ -1,6 +1,5 @@
 from django.http import Http404, HttpResponse, HttpResponseNotFound
-from django.shortcuts import render
-from urllib3 import HTTPResponse
+from django.shortcuts import render, get_object_or_404
 
 from .models import Car, Mark
 
@@ -17,7 +16,7 @@ def index(request):
     marks = Mark.objects.all()
     context = {
             'menu': menu,
-            'title': 'Автомобильный тур',
+            'title': 'Мои автомобили',
             'cars': cars,
             'marks': marks,
             'mark_selected': 0
@@ -26,7 +25,15 @@ def index(request):
 
 
 def show_car(request, car_id):
-    return HttpResponse(f'Автомобиль с VIN {car_id}')
+    car = get_object_or_404(Car, pk=car_id)
+
+    context = {
+            'menu': menu,
+            'title': str(car),
+            'car': car,
+            'mark_selected': car_id
+            }
+    return render(request, 'cars/car.html', context)
 
 
 def show_mark(request, mark_id):

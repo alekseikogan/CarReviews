@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>
+  {{title}}
+</h1>
+    <div>
+      <p> Тип кузова: {{car.body}} </p>
+      <p> Комплектация: {{car.complect}} </p>
+      <p> Год: {{car.year}} </p>
+    </div>
+      {% autoescape on %}
+      <p> {{car.description|linebreaks}} </p>
+      {% endautoescape %}
+
+{% if car.photo %}
+  <img class="img-article-left.thumb" src="{{car.photo.url}}" align="middle">
+{% endif %}
+{% endblock %}

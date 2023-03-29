@@ -3,12 +3,10 @@
 <h1>
   {{title}}
 </h1>
-<p> Мои случайные 5 машин </p>
 <ul class="list-articles">
 {% for car in cars %}
   {% if car.photo %}
-	  <p><img class="img-article-left thumb" src="{{car.photo.url}}"></p>
-    
+	  <img class="img-article-left.thumb" src="{{car.photo.url}}">
   {% endif %}
     <li>
       <h2> {{car.mark}} {{car.model}} </h2>
@@ -21,9 +19,7 @@
       <div class="clear"></div>
 			<p class="link-read-post">
         <a href="{{ car.get_absolute_url }}">
-        Читать полностью
-        </a>
-      </p>
+        Читать полностью</a></p>
 		</li>
   {% endfor %}
 </ul>

@@ -16,18 +16,21 @@ a:hover {
 	text-decoration: underline;
 }
 
-img {max-width: 600px; height: auto;}
+img {object-fit: cover;
+	width: 60%;
+	height: 60%;
+}
 
 img.img-article-left {
-	max-width: 300px;
+	max-width: auto;
 	height: auto;
 	float: left;
 	padding: 0 10px 10px 0;
 }
 
 img.img-article-left.thumb {
-	max-width: 150px;
-	height: auto;
+	width: 800px;
+	height: 600px;
 }
 
 p.link-read-post {
@@ -36,7 +39,7 @@ p.link-read-post {
 p.link-read-post a {
 	padding: 10px;
 	min-width: 100px;
-	background: #333671;
+	background: #353874;
 	color: #fff;
 	text-decoration: none;
 }
@@ -81,14 +84,15 @@ ul.list-articles li {
 }
 
 .logo {
-	background: url('../images/logo.png') no-repeat 10px 5px;
+	background: url('../images/headlogo.png');
 	width: 70px;
-	height: 60px;
+	height: 50px;
 }
 
 ul.mainmenu {
 	list-style: none;
-	margin: 0;
+	margin: 10px;
+	margin-top: 15px;
 	padding: 0;
 	height: 60px;
 	color: #fdc073;
@@ -101,7 +105,6 @@ ul.mainmenu li {
 }
 ul.mainmenu li.logo {margin: 0;}
 ul.mainmenu li.last {float: right;}
-
 ul.mainmenu li a {
 	color: #fdc073;
 	text-decoration: none;
