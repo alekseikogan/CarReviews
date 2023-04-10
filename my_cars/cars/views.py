@@ -151,6 +151,7 @@ class AddCar(CreateView):
         context['marks'] = Mark.objects.all()
         return context
 
+
 def about(request):
     context = {
             'title': 'Об авторе',
