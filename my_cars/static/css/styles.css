@@ -16,21 +16,18 @@ a:hover {
 	text-decoration: underline;
 }
 
-img {object-fit: cover;
-	width: 60%;
-	height: 60%;
-}
+img {max-width: 600px; height: auto;}
 
 img.img-article-left {
-	max-width: auto;
+	max-width: 300px;
 	height: auto;
 	float: left;
 	padding: 0 10px 10px 0;
 }
 
 img.img-article-left.thumb {
-	width: 800px;
-	height: 600px;
+	max-width: 150px;
+	height: auto;
 }
 
 p.link-read-post {
@@ -39,7 +36,7 @@ p.link-read-post {
 p.link-read-post a {
 	padding: 10px;
 	min-width: 100px;
-	background: #353874;
+	background: #333671;
 	color: #fff;
 	text-decoration: none;
 }
@@ -84,15 +81,14 @@ ul.list-articles li {
 }
 
 .logo {
-	background: url('../images/headlogo.png');
+	background: url('../images/logo.png') no-repeat 10px 5px;
 	width: 70px;
 	height: 60px;
 }
 
 ul.mainmenu {
 	list-style: none;
-	margin: 10px;
-	margin-top: 15px;
+	margin: 0;
 	padding: 0;
 	height: 60px;
 	color: #fdc073;
@@ -105,6 +101,7 @@ ul.mainmenu li {
 }
 ul.mainmenu li.logo {margin: 0;}
 ul.mainmenu li.last {float: right;}
+
 ul.mainmenu li a {
 	color: #fdc073;
 	text-decoration: none;
@@ -392,4 +389,42 @@ ul.lang-list li a:hover {color: #fdc073;}
 .form-button {
     min-width: 200px;
     font-size: 16px;
+}
+
+.list-pages {
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+.list-pages ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.list-pages ul li {
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+.list-pages a {
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+}
+.list-pages .page-num, .page-num-selected {
+	display: inline-block;
+	width: 60px;
+	height: 44px;
+	padding: 16px 0 0 0;
+	border: 1px solid #d0d0d0;
+	border-radius: 30px;
+}
+.list-pages .page-num:hover {
+	box-shadow: 3px 3px 1px #d0d0d0; 
+}
+.list-pages .page-num-selected {
+	border: none;
+	color: #000;
+	font-size: 20px;
+}
+.list-pages .page-num-selected:hover {
+	box-shadow: none; 
 }

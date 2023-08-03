@@ -49,7 +49,7 @@ class Mark(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('show_mark', kwargs={'mark_slug': self.slug})
+        return reverse('show_mark', kwargs={'mark': self.slug})
 
 
 # Машина
@@ -102,4 +102,4 @@ class Car(models.Model):
         return (f'{self.mark} {self.model}')
 
     def get_absolute_url(self):
-        return reverse('show_car', kwargs={'car_slug': self.slug})
+        return reverse('show_car', kwargs={'car': self.slug})

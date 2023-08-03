@@ -1,11 +1,9 @@
-from django.contrib import admin
-from django.urls import path
-
-from django.conf.urls.static import static
-from django.urls import path, include
-from my_cars import settings
-
 from cars.views import pageNotFound
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import include, path
+
+from my_cars import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
