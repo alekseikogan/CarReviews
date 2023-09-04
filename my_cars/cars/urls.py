@@ -2,6 +2,7 @@ from cars.views import AddCar, CarHome, MarkList, ShowCar, about, tech
 from django.urls import path, include
 from my_cars import settings
 from .views import LoginUser, RegisterUser, logout_user
+from django.views.decorators.cache import cache_page
 
 urlpatterns = [
     path('', CarHome.as_view(), name='home'),
