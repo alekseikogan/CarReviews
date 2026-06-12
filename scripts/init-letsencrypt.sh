@@ -45,7 +45,7 @@ echo "==> Перезапуск nginx с SSL ..."
 docker compose restart nginx
 
 echo "==> Автообновление сертификата (certbot renew) ..."
-docker compose --profile ssl up -d certbot
+docker compose --profile ssl up -d certbot-renew
 
 echo ""
 echo "Готово: https://${DOMAIN}/ и https://www.${DOMAIN}/"

@@ -45,7 +45,15 @@ services:
 
   certbot:
     image: certbot/certbot:latest
-    container_name: mycars_certbot
+    profiles:
+      - ssl
+    volumes:
+      - certbot_conf:/etc/letsencrypt
+      - certbot_www:/var/www/certbot
+
+  certbot-renew:
+    image: certbot/certbot:latest
+    container_name: mycars_certbot_renew
     profiles:
       - ssl
     volumes:
