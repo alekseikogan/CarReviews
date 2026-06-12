@@ -107,8 +107,8 @@ cp .env.example .env
 # отредактируйте .env: RDS endpoint, пароль, ALLOWED_HOSTS (IP/домен EC2)
 ```
 
-Security Group EC2: открыть **80** (HTTP).  
-RDS: разрешить вход с security group EC2 на порт **5432**.
+Security Group EC2: **80** (HTTP), **443** (HTTPS).  
+RDS: PostgreSQL **5432** ← security group EC2.
 
 ### Запуск
 
@@ -124,9 +124,29 @@ RDS: разрешить вход с security group EC2 на порт **5432**.
 docker compose up -d --build
 ```
 
-- **Сайт:** `http://<ec2-ip>/`
-- **API:** `http://<ec2-ip>/api/`
-- **Админка:** `http://<ec2-ip>/admin/`
+- **Сайт:** `https://drivelog.live/`
+- **API:** `/api/`
+- **Админка:** `/admin/`
 
-Статика React вшита в образ nginx — не нужен `frontend/dist` на хосте.  
-Фронтенд ходит в API по относительному пути `/api` (без порта 3000).
+### HTTPS (Let's Encrypt)
+
+В `.env`:
+
+```env
+DOMAIN=drivelog.live
+CERTBOT_EMAIL=you@example.com
+CORS_ALLOWED_ORIGINS=https://drivelog.live,https://www.drivelog.live
+CSRF_TRUSTED_ORIGINS=https://drivelog.live,https://www.drivelog.live
+```
+
+На EC2:
+
+```bash
+git pull
+chmod +x scripts/init-letsencrypt.sh
+docker compose up -d --build
+./scripts/init-letsencrypt.sh
+docker compose up -d --build backend
+```
+
+Скрипт получает сертификат, включает HTTPS в nginx и поднимает автообновление certbot.

@@ -17,11 +17,12 @@ RUN npm run build \
 FROM nginx:alpine
 
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx/snippets /etc/nginx/snippets
 COPY --from=frontend-build /app/dist /usr/share/nginx/html
 
 RUN test -f /usr/share/nginx/html/index.html \
     || (echo "ERROR: static files not copied into nginx image" && exit 1)
 
-EXPOSE 80
+EXPOSE 80 443
 
 CMD ["nginx", "-g", "daemon off;"]
