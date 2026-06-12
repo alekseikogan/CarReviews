@@ -1,7 +1,8 @@
 from django.core.management.base import BaseCommand
 from django.utils.text import slugify
 
-from cars.cars_data import BODY_TYPES, CARS, _desc, photo_url
+from cars.cars_data import BODY_TYPES, CARS, _desc
+from cars.photo_urls import photo_url
 from cars.models import Body, Car, Mark
 
 
@@ -27,7 +28,9 @@ class Command(BaseCommand):
                 Car.objects.select_related('mark').order_by('id'),
                 start=1,
             ):
-                car.photo_url = photo_url(idx, car.mark.name, car.model)
+                car.photo_url = photo_url(
+                    car.id, car.mark.name, car.model, car.year, car.complect,
+                )
                 car.save(update_fields=['photo_url'])
                 updated += 1
             self.stdout.write(self.style.SUCCESS(f'Обновлено фото: {updated}'))
@@ -77,7 +80,7 @@ class Command(BaseCommand):
                 body=bodies[body_slug],
                 description=description,
                 year=year,
-                photo_url=photo_url(idx, mark_name, model),
+                photo_url=photo_url(idx, mark_name, model, year, complect),
             )
             created_count += 1
 

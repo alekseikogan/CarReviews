@@ -9,7 +9,7 @@ export default function CarCard({ car }) {
     : car.model;
 
   return (
-    <article className="car-card">
+    <Link to={`/cars/${car.slug}`} className="car-card">
       <div className="car-card__image-wrap">
         <img
           className="car-card__image"
@@ -17,7 +17,7 @@ export default function CarCard({ car }) {
           alt={`${car.mark.name} ${title}`}
           loading="lazy"
           onError={(e) => {
-            e.target.src = fallbackPhoto(car.id);
+            e.target.src = fallbackPhoto(car);
           }}
         />
         <span className="car-card__year">{car.year}</span>
@@ -29,10 +29,8 @@ export default function CarCard({ car }) {
           {car.body && <span className="tag">{car.body.name}</span>}
         </div>
         <p className="car-card__desc">{car.description}</p>
-        <Link to={`/cars/${car.slug}`} className="car-card__link">
-          {t.readMore}
-        </Link>
+        <span className="car-card__link">{t.readMore}</span>
       </div>
-    </article>
+    </Link>
   );
 }

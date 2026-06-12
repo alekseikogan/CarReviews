@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { fallbackPhoto } from '../utils/photos';
+import { tileFallbackPhoto } from '../utils/photos';
 
 export default function TileCard({ to, title, subtitle, image, imageSeed }) {
   return (
@@ -7,11 +7,11 @@ export default function TileCard({ to, title, subtitle, image, imageSeed }) {
       <div className="tile-card__image-wrap">
         <img
           className="tile-card__image"
-          src={image || fallbackPhoto(imageSeed)}
+          src={image || tileFallbackPhoto(imageSeed)}
           alt={title}
           loading="lazy"
           onError={(e) => {
-            e.target.src = fallbackPhoto(imageSeed);
+            e.target.src = tileFallbackPhoto(imageSeed);
           }}
         />
       </div>

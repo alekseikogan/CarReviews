@@ -40,17 +40,6 @@ export default function CarDetailPage() {
     <article className="car-detail">
       <Link to="/" className="back-link">{t.backToCatalog}</Link>
 
-      <div className="car-detail__hero">
-        <img
-          className="car-detail__image"
-          src={car.photo_display}
-          alt={`${car.mark.name} ${title}`}
-          onError={(e) => {
-            e.target.src = fallbackPhoto(car.id);
-          }}
-        />
-      </div>
-
       <div className="car-detail__content">
         <div className="car-detail__mark">{car.mark.name}</div>
         <h1 className="car-detail__title">{title}</h1>
@@ -59,6 +48,17 @@ export default function CarDetailPage() {
           {car.body && <span className="tag">{car.body.name}</span>}
         </div>
         <p className="car-detail__description">{car.description}</p>
+      </div>
+
+      <div className="car-detail__hero">
+        <img
+          className="car-detail__image"
+          src={car.photo_display}
+          alt={`${car.mark.name} ${title}`}
+          onError={(e) => {
+            e.target.src = fallbackPhoto(car);
+          }}
+        />
       </div>
     </article>
   );
