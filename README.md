@@ -1,38 +1,62 @@
 # MyCars 🚗
 
-**MyCars** — социальная платформа для автолюбителей, где пользователи делятся честными отзывами о машинах, на которых они действительно ездили.  
-Меньше маркетинга — больше реального опыта за рулём.
+**MyCars** — каталог автомобилей, на которых я ездил за рулём.  
+145 машин с описаниями, фотографиями и личными впечатлениями от вождения.
 
 ---
 
-## Возможности
+## Стек
 
-- ✍️ **Публикация отзывов**  
-  Оставляй честные отзывы о своём автомобиле: плюсы, минусы, поломки, расход и впечатления от вождения.
+- **Backend:** Django 4.2 + Django REST Framework
+- **Frontend:** React 18 + Vite
+- **База данных:** PostgreSQL 16
+- **Инфраструктура:** Docker Compose (3 контейнера)
 
-- 📊 **Сравнение автомобилей**  
-  Сравнивай разные модели по отзывам реальных водителей.
+## Быстрый старт
 
-- 💬 **Комментарии и обсуждения**  
-  Общайся с другими пользователями, обсуждай опыт эксплуатации автомобилей.
+```bash
+docker compose up --build
+```
 
-- 👤 **Профиль пользователя**  
-  История всех автомобилей, на которых ездил пользователь, и его отзывы.
+После запуска:
 
----
+- **Фронтенд:** http://localhost:3000
+- **API:** http://localhost:8000/api/
+- **Админка:** http://localhost:8000/admin/
 
-## Технологический стек
+## Локальная разработка
 
-[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
-[![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat-square&logo=Django%20REST%20Framework)](https://www.django-rest-framework.org/)
-[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-464646?style=flat-square&logo=PostgreSQL)](https://www.postgresql.org/)
+### Backend
 
----
+```bash
+cd my_cars
+pip install -r ../requirements.txt
+# Запустите PostgreSQL (или через docker compose up db)
+python manage.py migrate
+python manage.py load_cars
+python manage.py runserver
+```
 
-## Планируемые фичи
+### Frontend
 
-- 🔎 Фильтры и поиск по марке, модели и году выпуска  
-- ⭐ Рейтинг автомобилей по отзывам  
-- 📈 Аналитика и статистика по расходу и поломкам  
-- 📱 Мобильная версия сайта  
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## API
+
+| Endpoint | Описание |
+|----------|----------|
+| `GET /api/cars/` | Список автомобилей (пагинация, фильтр `?mark=bmw`, поиск `?search=camry`) |
+| `GET /api/cars/{slug}/` | Детали автомобиля |
+| `GET /api/marks/` | Список марок |
+| `GET /api/cars/stats/` | Статистика |
+
+## Загрузка данных
+
+```bash
+python manage.py load_cars          # загрузить, если БД пуста
+python manage.py load_cars --force  # пересоздать все записи
+```

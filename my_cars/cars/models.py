@@ -85,10 +85,18 @@ class Car(models.Model):
     )
     description = models.TextField(
         null=True, blank=True, verbose_name='Описание')
-    year = models.IntegerField(verbose_name='Год')
+    year = models.IntegerField(verbose_name='Год', default=2020)
     photo = models.ImageField(
         upload_to='photos/%Y/%m/%d/',
-        verbose_name='Фото',)
+        blank=True,
+        null=True,
+        verbose_name='Фото',
+    )
+    photo_url = models.URLField(
+        max_length=500,
+        blank=True,
+        verbose_name='URL фото',
+    )
     time_create = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Дата добавления')
