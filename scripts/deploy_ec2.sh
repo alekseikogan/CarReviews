@@ -10,4 +10,4 @@ fi
 echo "==> Сборка и запуск контейнеров (React собирается внутри образа nginx)..."
 docker compose up -d --build
 
-echo "==> Готово: http://<ваш-ec2-ip>/automate/"
+echo "==> Готово: http://<ваш-ec2-ip>/"

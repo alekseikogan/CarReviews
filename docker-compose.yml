@@ -28,7 +28,7 @@ services:
       context: .
       dockerfile: nginx/Dockerfile
       args:
-        VITE_BASE_PATH: /automate/
+        VITE_BASE_PATH: /
     container_name: mycars_nginx
     ports:
       - "80:80"

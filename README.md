@@ -124,7 +124,7 @@ RDS: разрешить вход с security group EC2 на порт **5432**.
 docker compose up -d --build
 ```
 
-- **Сайт:** `http://<ec2-ip>/automate/`
+- **Сайт:** `http://<ec2-ip>/`
 - **API:** `http://<ec2-ip>/api/`
 - **Админка:** `http://<ec2-ip>/admin/`
 
