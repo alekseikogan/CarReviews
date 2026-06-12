@@ -92,6 +92,72 @@ python manage.py export_cars              # экспорт БД → fixtures/car
 ./scripts/download_photos.sh
 ```
 
+## Workflow: `main` и `for_ec2_amazon`
+
+Две ветки — один код приложения, разная инфраструктура.
+
+| Ветка | Где работает | Docker |
+|-------|--------------|--------|
+| **`main`** | Локально (ПК) | `db` + `backend` + `frontend` (:3000) |
+| **`for_ec2_amazon`** | Прод (EC2) | `backend` + `nginx` (HTTPS), БД — **RDS** |
+
+### Локальная разработка (`main`)
+
+```bash
+git checkout main
+docker compose up --build
+```
+
+- **Сайт:** http://localhost:3000  
+- **API:** http://localhost:8000/api/  
+- **БД:** контейнер `db` на компьютере  
+
+Альтернатива без фронтенд-контейнера:
+
+```bash
+docker compose up db backend
+cd frontend && npm run dev
+```
+
+### Выкладка на прод
+
+```bash
+git checkout for_ec2_amazon
+git merge main
+git push origin for_ec2_amazon
+```
+
+На EC2:
+
+```bash
+cd ~/Dev/CarReviews
+git pull origin for_ec2_amazon
+docker compose up -d --build
+```
+
+Файл `.env` на сервере не коммитится — там RDS, домен и секреты. При деплое его не перезаписывай.
+
+### Два разных `.env`
+
+| Переменная | Локально (`main`) | EC2 (`for_ec2_amazon`) |
+|------------|-------------------|------------------------|
+| `POSTGRES_HOST` | `db` (в docker-compose) | endpoint RDS |
+| `CORS_ALLOWED_ORIGINS` | `http://localhost:3000` | `https://drivelog.live,...` |
+| `DOMAIN` | не нужен | `drivelog.live` |
+
+### Конфликты при merge
+
+Чаще всего в `docker-compose.yml`, `nginx.conf`, `README`.  
+Правило: в каждой ветке оставляй **свою** инфраструктурную версию файла — код Django/React мержится как обычно.
+
+```text
+ПК:  feature → main  →  merge  →  for_ec2_amazon  →  push
+                                        ↓
+EC2:                              git pull + docker compose up
+```
+
+**Не веди разработку постоянно в `for_ec2_amazon`** — только merge из `main` и правки, специфичные для прода (nginx, SSL).
+
 ## Деплой на AWS EC2 (ветка `for_ec2_amazon`)
 
 Стек: **Nginx (порт 80)** + **Django backend** + **RDS PostgreSQL** (без контейнера `db`).
