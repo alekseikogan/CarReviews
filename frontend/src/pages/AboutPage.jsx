@@ -1,19 +1,14 @@
+import { useApp } from '../context/AppContext';
+
 export default function AboutPage() {
+  const { t } = useApp();
+
   return (
     <article className="about">
-      <h1 className="about__title">О проекте</h1>
-      <p className="about__text">
-        MyCars — личный каталог автомобилей, на которых я когда-либо сидел за рулём.
-        Здесь собраны впечатления от вождения: управляемость, комфорт, обзорность
-        и всё то, что запоминается после поездки.
-      </p>
-      <p className="about__text">
-        В каталоге 145 автомобилей — от отечественной классики ВАЗ и УАЗ
-        до премиальных BMW, Mercedes, Lexus и спортивных Camaro, Mustang, GT86.
-      </p>
-      <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem', fontWeight: 700 }}>
-        Технологии
-      </h2>
+      <h1 className="about__title">{t.aboutTitle}</h1>
+      <p className="about__text">{t.aboutText1}</p>
+      <p className="about__text">{t.aboutText2}</p>
+      <h2 className="about__subtitle">{t.technologies}</h2>
       <div className="tech-stack">
         {['Django', 'Django REST Framework', 'PostgreSQL', 'React', 'Vite', 'Docker'].map(
           (tech) => (

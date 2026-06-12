@@ -18,6 +18,7 @@ echo "PostgreSQL is up"
 
 python manage.py migrate --noinput
 python manage.py load_cars
+python manage.py load_cars --update-photos
 python manage.py collectstatic --noinput
 
 exec gunicorn my_cars.wsgi:application --bind 0.0.0.0:8000 --workers 2

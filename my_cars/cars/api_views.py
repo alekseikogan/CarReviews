@@ -11,12 +11,14 @@ class MarkViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Mark.objects.annotate(car_count=Count('cars')).order_by('name')
     serializer_class = MarkSerializer
     lookup_field = 'slug'
+    pagination_class = None
 
 
 class BodyViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Body.objects.all()
+    queryset = Body.objects.annotate(car_count=Count('cars')).order_by('name')
     serializer_class = BodySerializer
     lookup_field = 'slug'
+    pagination_class = None
 
 
 class CarViewSet(viewsets.ReadOnlyModelViewSet):

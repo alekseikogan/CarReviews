@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getCar } from '../api';
+import { useApp } from '../context/AppContext';
+import { fallbackPhoto } from '../utils/photos';
 
 export default function CarDetailPage() {
   const { slug } = useParams();
+  const { t } = useApp();
   const [car, setCar] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,21 +15,21 @@ export default function CarDetailPage() {
     setLoading(true);
     getCar(slug)
       .then(setCar)
-      .catch(() => setError('Автомобиль не найден'))
+      .catch(() => setError(t.carNotFound))
       .finally(() => setLoading(false));
-  }, [slug]);
+  }, [slug, t.carNotFound]);
 
   if (loading) {
     return (
       <div className="loading">
         <div className="spinner" />
-        Загрузка...
+        {t.loading}
       </div>
     );
   }
 
   if (error || !car) {
-    return <div className="error">{error || 'Не найдено'}</div>;
+    return <div className="error">{error || t.notFound}</div>;
   }
 
   const title = car.complect
@@ -35,7 +38,7 @@ export default function CarDetailPage() {
 
   return (
     <article className="car-detail">
-      <Link to="/" className="back-link">← Назад к каталогу</Link>
+      <Link to="/" className="back-link">{t.backToCatalog}</Link>
 
       <div className="car-detail__hero">
         <img
@@ -43,7 +46,7 @@ export default function CarDetailPage() {
           src={car.photo_display}
           alt={`${car.mark.name} ${title}`}
           onError={(e) => {
-            e.target.src = `https://loremflickr.com/1200/675/car,automobile?lock=${car.id}`;
+            e.target.src = fallbackPhoto(car.id);
           }}
         />
       </div>
@@ -52,7 +55,7 @@ export default function CarDetailPage() {
         <div className="car-detail__mark">{car.mark.name}</div>
         <h1 className="car-detail__title">{title}</h1>
         <div className="car-detail__tags">
-          <span className="tag">{car.year} год</span>
+          <span className="tag">{car.year} {t.year}</span>
           {car.body && <span className="tag">{car.body.name}</span>}
         </div>
         <p className="car-detail__description">{car.description}</p>

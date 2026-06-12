@@ -1,4 +1,8 @@
+import { useApp } from '../context/AppContext';
+
 export default function BrandFilter({ marks, selected, onSelect }) {
+  const { t } = useApp();
+
   return (
     <div className="brand-filter">
       <button
@@ -6,7 +10,7 @@ export default function BrandFilter({ marks, selected, onSelect }) {
         className={`brand-chip${!selected ? ' brand-chip--active' : ''}`}
         onClick={() => onSelect('')}
       >
-        Все
+        {t.allBrands}
       </button>
       {marks.map((mark) => (
         <button
@@ -16,7 +20,7 @@ export default function BrandFilter({ marks, selected, onSelect }) {
           onClick={() => onSelect(mark.slug)}
         >
           {mark.name}
-          <span style={{ opacity: 0.6, marginLeft: '0.3rem' }}>{mark.car_count}</span>
+          <span className="brand-chip__count">{mark.car_count}</span>
         </button>
       ))}
     </div>

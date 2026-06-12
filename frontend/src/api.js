@@ -15,8 +15,12 @@ async function fetchApi(endpoint, params = {}) {
   return response.json();
 }
 
-export function getCars({ page = 1, mark, search } = {}) {
-  return fetchApi('/cars/', { page, mark, search });
+export function getCars({ page = 1, mark, body, search } = {}) {
+  return fetchApi('/cars/', { page, mark, body, search });
+}
+
+export function getBodies() {
+  return fetchApi('/bodies/');
 }
 
 export function getCar(slug) {

@@ -26,12 +26,46 @@ def _desc(mark, model, complect, body, year, note=''):
     )
 
 
+# Цветные фото автомобилей с Unsplash (без водяных знаков)
+_UNSPLASH_CARS = [
+    '1542362563207-aeb566b25d3f',
+    '1503376780353-7f669ff66a09',
+    '1552519507-da3b142c6e3d',
+    '1494976388534-d1058498ceb2',
+    '1580273916550-4061e76ee7ed',
+    '1618843479313-40f8afb5110d',
+    '1502877338535-766e1452684a',
+    '1617531653524-bd46e24dcc71',
+    '1544636331-e26879cd4d9b',
+    '1563720223186-67aefb04de37',
+    '1583121274602-3e282e3ba186',
+    '1590362891991-f776e747a588',
+    '1619760139210-a8c4c8e7c7cc',
+    '1549317661-bd32c8ce0db7',
+    '1616422285268-7e188f487223',
+    '1555215695-3004980ad54e',
+    '1462394350454-2247418f5ac0',
+    '1617788138017-80ad40651399',
+    '1511919883354-c6110d13327a',
+    '1493238790250-48b249261b9a',
+    '1503736334956-4c8f4468356a',
+    '1558618666-fcd25c85cd64',
+    '1533470875892-3159ab6f1f51',
+    '1525609004556-caf75611776d',
+    '1541899481282-d53bffe3c35d',
+    '1605552494739-c7a46d5a2f2a',
+    '1621135802922-d1445b00144c',
+    '1492144534655-ae79c964c9d7',
+]
+
+
 def photo_url(car_id, mark, model):
-    make = mark.lower().replace(' ', '-')
+    key = f'{mark}-{model}-{car_id}'
+    idx = sum(ord(c) for c in key) % len(_UNSPLASH_CARS)
+    photo_id = _UNSPLASH_CARS[idx]
     return (
-        f'https://cdn.imagin.studio/getimage'
-        f'?customer=img&make={make}&modelFamily={model.split()[0].lower()}'
-        f'&width=800&angle=23'
+        f'https://images.unsplash.com/photo-{photo_id}'
+        f'?w=800&h=500&fit=crop&auto=format&q=85'
     )
 
 

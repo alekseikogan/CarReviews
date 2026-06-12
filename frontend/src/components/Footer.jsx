@@ -1,7 +1,15 @@
+import { useApp } from '../context/AppContext';
+
 export default function Footer() {
+  const { t } = useApp();
+
   return (
     <footer className="footer">
-      <p>MyCars — личный каталог автомобилей, на которых я ездил за рулём</p>
+      <p>{t.footerText}</p>
+      <p
+        className="footer__credit"
+        dangerouslySetInnerHTML={{ __html: t.iconCredit }}
+      />
     </footer>
   );
 }

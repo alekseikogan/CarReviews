@@ -1,4 +1,8 @@
+import { useApp } from '../context/AppContext';
+
 export default function Pagination({ page, totalPages, onPageChange }) {
+  const { t } = useApp();
+
   if (totalPages <= 1) return null;
 
   return (
@@ -9,7 +13,7 @@ export default function Pagination({ page, totalPages, onPageChange }) {
         disabled={page <= 1}
         onClick={() => onPageChange(page - 1)}
       >
-        ← Назад
+        {t.prev}
       </button>
       <span className="pagination__info">
         {page} / {totalPages}
@@ -20,7 +24,7 @@ export default function Pagination({ page, totalPages, onPageChange }) {
         disabled={page >= totalPages}
         onClick={() => onPageChange(page + 1)}
       >
-        Вперёд →
+        {t.next}
       </button>
     </div>
   );

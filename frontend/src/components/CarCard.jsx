@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useApp } from '../context/AppContext';
+import { fallbackPhoto } from '../utils/photos';
 
 export default function CarCard({ car }) {
+  const { t } = useApp();
   const title = car.complect
     ? `${car.model} ${car.complect}`
     : car.model;
@@ -14,7 +17,7 @@ export default function CarCard({ car }) {
           alt={`${car.mark.name} ${title}`}
           loading="lazy"
           onError={(e) => {
-            e.target.src = `https://loremflickr.com/800/500/car,automobile?lock=${car.id}`;
+            e.target.src = fallbackPhoto(car.id);
           }}
         />
         <span className="car-card__year">{car.year}</span>
@@ -27,7 +30,7 @@ export default function CarCard({ car }) {
         </div>
         <p className="car-card__desc">{car.description}</p>
         <Link to={`/cars/${car.slug}`} className="car-card__link">
-          Подробнее →
+          {t.readMore}
         </Link>
       </div>
     </article>

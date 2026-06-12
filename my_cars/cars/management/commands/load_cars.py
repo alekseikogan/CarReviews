@@ -14,8 +14,26 @@ class Command(BaseCommand):
             action='store_true',
             help='Пересоздать данные (удалить существующие записи)',
         )
+        parser.add_argument(
+            '--update-photos',
+            action='store_true',
+            help='Обновить URL фотографий у существующих записей',
+        )
 
     def handle(self, *args, **options):
+        if options['update_photos']:
+            updated = 0
+            for idx, car in enumerate(
+                Car.objects.select_related('mark').order_by('id'),
+                start=1,
+            ):
+                car.photo_url = photo_url(idx, car.mark.name, car.model)
+                car.save(update_fields=['photo_url'])
+                updated += 1
+            self.stdout.write(self.style.SUCCESS(f'Обновлено фото: {updated}'))
+            if not options['force']:
+                return
+
         if options['force']:
             Car.objects.all().delete()
             Mark.objects.all().delete()
