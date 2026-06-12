@@ -14,16 +14,15 @@ BODY_TYPES = {
 }
 
 
-def _desc(mark, model, complect, body, year, note=''):
+from cars.car_reviews import REVIEWS
+
+
+def _desc(mark, model, complect, body, year, note='', index=1):
+    if 1 <= index <= len(REVIEWS):
+        return REVIEWS[index - 1]
     body_ru = BODY_TYPES.get(body, 'автомобиль')
     comp = f' в комплектации {complect}' if complect else ''
-    extra = f' {note}' if note else ''
-    return (
-        f'{mark} {model}{comp} ({year}) — {body_ru.lower()}{extra}. '
-        f'Проверил на практике управляемость, комфорт и поведение на дороге. '
-        f'Отдельно отмечу посадку, обзорность и отклик на руль — '
-        f'именно эти впечатления остались после поездки за рулём.'
-    )
+    return f'{mark} {model}{comp} ({year}) — {body_ru.lower()}.'
 
 
 from cars.photo_urls import photo_url  # noqa: F401 — re-export

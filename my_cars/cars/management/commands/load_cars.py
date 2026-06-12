@@ -71,7 +71,7 @@ class Command(BaseCommand):
                 slug = f'{base_slug}-{counter}'
                 counter += 1
 
-            description = _desc(mark_name, model, complect, body_slug, year, note)
+            description = _desc(mark_name, model, complect, body_slug, year, note, index=idx)
             Car.objects.create(
                 mark=marks[mark_name],
                 slug=slug,

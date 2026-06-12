@@ -53,7 +53,7 @@ class Command(BaseCommand):
                 counter += 1
 
             car_pk += 1
-            description = _desc(mark_name, model, complect, body_slug, year, note)
+            description = _desc(mark_name, model, complect, body_slug, year, note, index=idx)
             remote_url = photo_url(idx, mark_name, model, year, complect)
 
             items.append({
