@@ -87,7 +87,7 @@ class Car(models.Model):
         null=True, blank=True, verbose_name='Описание')
     year = models.IntegerField(verbose_name='Год', default=2020)
     photo = models.ImageField(
-        upload_to='photos/%Y/%m/%d/',
+        upload_to='cars/',
         blank=True,
         null=True,
         verbose_name='Фото',

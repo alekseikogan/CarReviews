@@ -250,6 +250,18 @@ img {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
+  max-height: 120px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.35s ease;
+}
+
+.stats--hidden {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  pointer-events: none;
 }
 
 .stat {
@@ -277,6 +289,10 @@ img {
 .stat--clickable {
   transition: all 0.2s;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  font: inherit;
 }
 
 .stat--clickable:hover {

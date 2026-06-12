@@ -1,0 +1,2786 @@
+[
+  {
+    "model": "cars.body",
+    "pk": 1,
+    "fields": {
+      "name": "Седан",
+      "slug": "sedan"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 2,
+    "fields": {
+      "name": "Хэтчбек",
+      "slug": "hatchback"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 3,
+    "fields": {
+      "name": "Внедорожник",
+      "slug": "suv"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 4,
+    "fields": {
+      "name": "Кроссовер",
+      "slug": "crossover"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 5,
+    "fields": {
+      "name": "Купе",
+      "slug": "coupe"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 6,
+    "fields": {
+      "name": "Кабриолет",
+      "slug": "cabrio"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 7,
+    "fields": {
+      "name": "Универсал",
+      "slug": "wagon"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 8,
+    "fields": {
+      "name": "Минивэн",
+      "slug": "minivan"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 9,
+    "fields": {
+      "name": "Лифтбек",
+      "slug": "liftback"
+    }
+  },
+  {
+    "model": "cars.body",
+    "pk": 10,
+    "fields": {
+      "name": "Пикап",
+      "slug": "pickup"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 1,
+    "fields": {
+      "name": "Audi",
+      "slug": "audi"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+      "mark": 1,
+      "body": 2,
+      "slug": "audi-a3-14-at",
+      "model": "A3",
+      "complect": "1.4 AT",
+      "description": "Audi A3 в комплектации 1.4 AT (2018) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/audi-a3-14-at.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=a3&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+      "mark": 1,
+      "body": 1,
+      "slug": "audi-a4-b8",
+      "model": "A4",
+      "complect": "B8",
+      "description": "Audi A4 в комплектации B8 (2014) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/audi-a4-b8.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=a4&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+      "mark": 1,
+      "body": 1,
+      "slug": "audi-a4-b9",
+      "model": "A4",
+      "complect": "B9",
+      "description": "Audi A4 в комплектации B9 (2019) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/audi-a4-b9.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=a4&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+      "mark": 1,
+      "body": 1,
+      "slug": "audi-a6-comfort",
+      "model": "A6",
+      "complect": "Comfort",
+      "description": "Audi A6 в комплектации Comfort (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/audi-a6-comfort.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=a6&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+      "mark": 1,
+      "body": 1,
+      "slug": "audi-a6-rest-quattro",
+      "model": "A6",
+      "complect": "Rest Quattro",
+      "description": "Audi A6 в комплектации Rest Quattro (2019) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/audi-a6-rest-quattro.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=a6&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+      "mark": 1,
+      "body": 4,
+      "slug": "audi-q3-14-at",
+      "model": "Q3",
+      "complect": "1.4 AT",
+      "description": "Audi Q3 в комплектации 1.4 AT (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/audi-q3-14-at.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=q3&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 7,
+    "fields": {
+      "mark": 1,
+      "body": 5,
+      "slug": "audi-tt-quattro",
+      "model": "TT",
+      "complect": "Quattro",
+      "description": "Audi TT в комплектации Quattro (2015) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/audi-tt-quattro.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=audi&modelFamily=tt&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 2,
+    "fields": {
+      "name": "BAIC",
+      "slug": "baic"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 8,
+    "fields": {
+      "mark": 2,
+      "body": 4,
+      "slug": "baic-x55-luxury",
+      "model": "X55",
+      "complect": "Luxury",
+      "description": "BAIC X55 в комплектации Luxury (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/baic-x55-luxury.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=baic&modelFamily=x55&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 3,
+    "fields": {
+      "name": "BMW",
+      "slug": "bmw"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 9,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-320i-x-drive",
+      "model": "320i",
+      "complect": "X-Drive",
+      "description": "BMW 320i в комплектации X-Drive (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/bmw-320i-x-drive.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=3-series&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 10,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-320d-g20-m-sport",
+      "model": "320d",
+      "complect": "G20 M sport",
+      "description": "BMW 320d в комплектации G20 M sport (2020) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/bmw-320d-g20-m-sport.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=3-series&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 11,
+    "fields": {
+      "mark": 3,
+      "body": 6,
+      "slug": "bmw-428i-cabrio-f33",
+      "model": "428i",
+      "complect": "Cabrio F33",
+      "description": "BMW 428i в комплектации Cabrio F33 (2016) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/bmw-428i-cabrio-f33.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=4-series&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 12,
+    "fields": {
+      "mark": 3,
+      "body": 5,
+      "slug": "bmw-430i-m-sport",
+      "model": "430i",
+      "complect": "M Sport",
+      "description": "BMW 430i в комплектации M Sport (2018) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/bmw-430i-m-sport.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=4-series&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 13,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-520d",
+      "model": "520d",
+      "complect": "",
+      "description": "BMW 520d (2014) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/bmw-520d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 14,
+    "fields": {
+      "mark": 3,
+      "body": 7,
+      "slug": "bmw-520d-1",
+      "model": "520d",
+      "complect": "Универсал (Марика)",
+      "description": "BMW 520d в комплектации Универсал (Марика) (2015) — универсал универсал. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/bmw-520d-1.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 15,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-520d-g30-m",
+      "model": "520d",
+      "complect": "G30 M",
+      "description": "BMW 520d в комплектации G30 M (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/bmw-520d-g30-m.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 16,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-530d-xdrive",
+      "model": "530d",
+      "complect": "xDrive",
+      "description": "BMW 530d в комплектации xDrive (2017) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/bmw-530d-xdrive.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 17,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-528i-buisness",
+      "model": "528i",
+      "complect": "Buisness",
+      "description": "BMW 528i в комплектации Buisness (2015) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/bmw-528i-buisness.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 18,
+    "fields": {
+      "mark": 3,
+      "body": 1,
+      "slug": "bmw-528i-luxury",
+      "model": "528i",
+      "complect": "Luxury",
+      "description": "BMW 528i в комплектации Luxury (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/bmw-528i-luxury.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=5-series&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 19,
+    "fields": {
+      "mark": 3,
+      "body": 5,
+      "slug": "bmw-640i-xdrive",
+      "model": "640i",
+      "complect": "xDrive",
+      "description": "BMW 640i в комплектации xDrive (2015) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/bmw-640i-xdrive.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=6-series&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 20,
+    "fields": {
+      "mark": 3,
+      "body": 3,
+      "slug": "bmw-x5-25d",
+      "model": "X5",
+      "complect": "25d",
+      "description": "BMW X5 в комплектации 25d (2018) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/bmw-x5-25d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=x5&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 21,
+    "fields": {
+      "mark": 3,
+      "body": 3,
+      "slug": "bmw-x5-35i-e70",
+      "model": "X5",
+      "complect": "35i E70",
+      "description": "BMW X5 в комплектации 35i E70 (2012) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2012,
+      "photo": "cars/bmw-x5-35i-e70.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=x5&modelYear=2012&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 22,
+    "fields": {
+      "mark": 3,
+      "body": 3,
+      "slug": "bmw-x6-m",
+      "model": "X6",
+      "complect": "M",
+      "description": "BMW X6 в комплектации M (2016) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/bmw-x6-m.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=x6&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 23,
+    "fields": {
+      "mark": 3,
+      "body": 3,
+      "slug": "bmw-x7-m",
+      "model": "X7",
+      "complect": "M",
+      "description": "BMW X7 в комплектации M (2021) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2021,
+      "photo": "cars/bmw-x7-m.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=bmw&modelFamily=x7&modelYear=2021&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 4,
+    "fields": {
+      "name": "Changan",
+      "slug": "changan"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 24,
+    "fields": {
+      "mark": 4,
+      "body": 9,
+      "slug": "changan-uni-v",
+      "model": "UNI-V",
+      "complect": "",
+      "description": "Changan UNI-V (2023) — лифтбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/changan-uni-v.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=changan&modelFamily=uni-v&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 5,
+    "fields": {
+      "name": "Cadillac",
+      "slug": "cadillac"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 25,
+    "fields": {
+      "mark": 5,
+      "body": 1,
+      "slug": "cadillac-ats-performance",
+      "model": "ATS",
+      "complect": "Performance",
+      "description": "Cadillac ATS в комплектации Performance (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/cadillac-ats-performance.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=cadillac&modelFamily=ats&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 26,
+    "fields": {
+      "mark": 5,
+      "body": 3,
+      "slug": "cadillac-escalade",
+      "model": "Escalade",
+      "complect": "",
+      "description": "Cadillac Escalade (2018) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/cadillac-escalade.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=cadillac&modelFamily=escalade&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 27,
+    "fields": {
+      "mark": 5,
+      "body": 4,
+      "slug": "cadillac-srx",
+      "model": "SRX",
+      "complect": "",
+      "description": "Cadillac SRX (2014) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/cadillac-srx.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=cadillac&modelFamily=xt5&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 6,
+    "fields": {
+      "name": "Citroen",
+      "slug": "citroen"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 28,
+    "fields": {
+      "mark": 6,
+      "body": 2,
+      "slug": "citroen-c4",
+      "model": "C4",
+      "complect": "",
+      "description": "Citroen C4 (2013) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2013,
+      "photo": "cars/citroen-c4.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=citroen&modelFamily=c4&modelYear=2013&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 7,
+    "fields": {
+      "name": "Chery",
+      "slug": "chery"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 29,
+    "fields": {
+      "mark": 7,
+      "body": 1,
+      "slug": "chery-arizo-8",
+      "model": "Arizo 8",
+      "complect": "",
+      "description": "Chery Arizo 8 (2023) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/chery-arizo-8.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=chery&modelFamily=arrizo-8&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 30,
+    "fields": {
+      "mark": 7,
+      "body": 4,
+      "slug": "chery-tiggo-4-pro-max",
+      "model": "Tiggo 4 Pro Max",
+      "complect": "",
+      "description": "Chery Tiggo 4 Pro Max (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/chery-tiggo-4-pro-max.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=chery&modelFamily=tiggo-4&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 31,
+    "fields": {
+      "mark": 7,
+      "body": 4,
+      "slug": "chery-tiggo-7-pro-max",
+      "model": "Tiggo 7 Pro Max",
+      "complect": "",
+      "description": "Chery Tiggo 7 Pro Max (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/chery-tiggo-7-pro-max.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=chery&modelFamily=tiggo-7&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 8,
+    "fields": {
+      "name": "Chevrolet",
+      "slug": "chevrolet"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 32,
+    "fields": {
+      "mark": 8,
+      "body": 5,
+      "slug": "chevrolet-camaro",
+      "model": "Camaro",
+      "complect": "",
+      "description": "Chevrolet Camaro (2017) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/chevrolet-camaro.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=chevrolet&modelFamily=camaro&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 33,
+    "fields": {
+      "mark": 8,
+      "body": 6,
+      "slug": "chevrolet-camaro-cabrio-36",
+      "model": "Camaro",
+      "complect": "Cabrio 3.6",
+      "description": "Chevrolet Camaro в комплектации Cabrio 3.6 (2018) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/chevrolet-camaro-cabrio-36.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=chevrolet&modelFamily=camaro&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 9,
+    "fields": {
+      "name": "Dodge",
+      "slug": "dodge"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 34,
+    "fields": {
+      "mark": 9,
+      "body": 5,
+      "slug": "dodge-challenger",
+      "model": "Challenger",
+      "complect": "",
+      "description": "Dodge Challenger (2019) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/dodge-challenger.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=dodge&modelFamily=challenger&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 10,
+    "fields": {
+      "name": "Exeed",
+      "slug": "exeed"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 35,
+    "fields": {
+      "mark": 10,
+      "body": 4,
+      "slug": "exeed-lx",
+      "model": "LX",
+      "complect": "",
+      "description": "Exeed LX (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/exeed-lx.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=exeed&modelFamily=lx&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 36,
+    "fields": {
+      "mark": 10,
+      "body": 4,
+      "slug": "exeed-rx",
+      "model": "RX",
+      "complect": "",
+      "description": "Exeed RX (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/exeed-rx.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=exeed&modelFamily=rx&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 37,
+    "fields": {
+      "mark": 10,
+      "body": 4,
+      "slug": "exeed-txl",
+      "model": "TXL",
+      "complect": "",
+      "description": "Exeed TXL (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/exeed-txl.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=exeed&modelFamily=txl&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 11,
+    "fields": {
+      "name": "Fiat",
+      "slug": "fiat"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 38,
+    "fields": {
+      "mark": 11,
+      "body": 2,
+      "slug": "fiat-500",
+      "model": "500",
+      "complect": "",
+      "description": "Fiat 500 (2015) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/fiat-500.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=fiat&modelFamily=500&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 39,
+    "fields": {
+      "mark": 11,
+      "body": 1,
+      "slug": "fiat-egea",
+      "model": "Egea",
+      "complect": "",
+      "description": "Fiat Egea (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/fiat-egea.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=fiat&modelFamily=tipo&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 40,
+    "fields": {
+      "mark": 11,
+      "body": 6,
+      "slug": "fiat-spider-124",
+      "model": "Spider 124",
+      "complect": "",
+      "description": "Fiat Spider 124 (2017) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/fiat-spider-124.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=fiat&modelFamily=124-spider&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 12,
+    "fields": {
+      "name": "Ford",
+      "slug": "ford"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 41,
+    "fields": {
+      "mark": 12,
+      "body": 6,
+      "slug": "ford-mustang",
+      "model": "Mustang",
+      "complect": "кабриолет",
+      "description": "Ford Mustang в комплектации кабриолет (2018) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/ford-mustang.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=ford&modelFamily=mustang&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 13,
+    "fields": {
+      "name": "GAC",
+      "slug": "gac"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 42,
+    "fields": {
+      "mark": 13,
+      "body": 4,
+      "slug": "gac-gs3",
+      "model": "GS3",
+      "complect": "",
+      "description": "GAC GS3 (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/gac-gs3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=gac&modelFamily=gs3&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 14,
+    "fields": {
+      "name": "Gelly",
+      "slug": "gelly"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 43,
+    "fields": {
+      "mark": 14,
+      "body": 4,
+      "slug": "gelly-atlas-pro",
+      "model": "Atlas Pro",
+      "complect": "",
+      "description": "Gelly Atlas Pro (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/gelly-atlas-pro.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=geely&modelFamily=atlas&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 44,
+    "fields": {
+      "mark": 14,
+      "body": 4,
+      "slug": "gelly-coolray",
+      "model": "Coolray",
+      "complect": "",
+      "description": "Gelly Coolray (2021) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2021,
+      "photo": "cars/gelly-coolray.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=geely&modelFamily=coolray&modelYear=2021&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 45,
+    "fields": {
+      "mark": 14,
+      "body": 1,
+      "slug": "gelly-emgrand",
+      "model": "Emgrand",
+      "complect": "",
+      "description": "Gelly Emgrand (2022) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/gelly-emgrand.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=geely&modelFamily=emgrand&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 15,
+    "fields": {
+      "name": "Haval",
+      "slug": "haval"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 46,
+    "fields": {
+      "mark": 15,
+      "body": 4,
+      "slug": "haval-dargo",
+      "model": "Dargo",
+      "complect": "",
+      "description": "Haval Dargo (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/haval-dargo.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=haval&modelFamily=h6&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 47,
+    "fields": {
+      "mark": 15,
+      "body": 3,
+      "slug": "haval-h3",
+      "model": "H3",
+      "complect": "",
+      "description": "Haval H3 (2024) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2024,
+      "photo": "cars/haval-h3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=haval&modelFamily=h6&modelYear=2024&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 48,
+    "fields": {
+      "mark": 15,
+      "body": 4,
+      "slug": "haval-jolion",
+      "model": "Jolion",
+      "complect": "",
+      "description": "Haval Jolion (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/haval-jolion.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=haval&modelFamily=jolion&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 49,
+    "fields": {
+      "mark": 15,
+      "body": 4,
+      "slug": "haval-fx7",
+      "model": "Fx7",
+      "complect": "",
+      "description": "Haval Fx7 (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/haval-fx7.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=haval&modelFamily=f7&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 16,
+    "fields": {
+      "name": "Honda",
+      "slug": "honda"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 50,
+    "fields": {
+      "mark": 16,
+      "body": 1,
+      "slug": "honda-accord",
+      "model": "Accord",
+      "complect": "",
+      "description": "Honda Accord (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/honda-accord.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=honda&modelFamily=accord&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 17,
+    "fields": {
+      "name": "Hyundai",
+      "slug": "hyundai"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 51,
+    "fields": {
+      "mark": 17,
+      "body": 1,
+      "slug": "hyundai-solaris-14-at-sedan",
+      "model": "Solaris",
+      "complect": "1.4 AT Sedan",
+      "description": "Hyundai Solaris в комплектации 1.4 AT Sedan (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/hyundai-solaris-14-at-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=hyundai&modelFamily=accent&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 52,
+    "fields": {
+      "mark": 17,
+      "body": 1,
+      "slug": "hyundai-solaris-16-at-sedan",
+      "model": "Solaris",
+      "complect": "1.6 AT Sedan Рестайлинг",
+      "description": "Hyundai Solaris в комплектации 1.6 AT Sedan Рестайлинг (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/hyundai-solaris-16-at-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=hyundai&modelFamily=accent&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 53,
+    "fields": {
+      "mark": 17,
+      "body": 8,
+      "slug": "hyundai-grand-starex",
+      "model": "Grand Starex",
+      "complect": "",
+      "description": "Hyundai Grand Starex (2015) — минивэн. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/hyundai-grand-starex.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=hyundai&modelFamily=staria&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 54,
+    "fields": {
+      "mark": 17,
+      "body": 4,
+      "slug": "hyundai-creta-16",
+      "model": "Creta",
+      "complect": "1.6",
+      "description": "Hyundai Creta в комплектации 1.6 (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/hyundai-creta-16.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=hyundai&modelFamily=creta&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 18,
+    "fields": {
+      "name": "Infinity",
+      "slug": "infinity"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 55,
+    "fields": {
+      "mark": 18,
+      "body": 4,
+      "slug": "infinity-qx70",
+      "model": "QX70",
+      "complect": "",
+      "description": "Infinity QX70 (2015) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/infinity-qx70.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=infiniti&modelFamily=qx70&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 19,
+    "fields": {
+      "name": "Jac",
+      "slug": "jac"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 56,
+    "fields": {
+      "mark": 19,
+      "body": 4,
+      "slug": "jac-js4",
+      "model": "JS4",
+      "complect": "",
+      "description": "Jac JS4 (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/jac-js4.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=jac&modelFamily=js4&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 57,
+    "fields": {
+      "mark": 19,
+      "body": 4,
+      "slug": "jac-js6",
+      "model": "JS6",
+      "complect": "",
+      "description": "Jac JS6 (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/jac-js6.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=jac&modelFamily=js6&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 20,
+    "fields": {
+      "name": "Jaecoo",
+      "slug": "jaecoo"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 58,
+    "fields": {
+      "mark": 20,
+      "body": 4,
+      "slug": "jaecoo-j7",
+      "model": "J7",
+      "complect": "",
+      "description": "Jaecoo J7 (2024) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2024,
+      "photo": "cars/jaecoo-j7.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=jaecoo&modelFamily=j7&modelYear=2024&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 21,
+    "fields": {
+      "name": "Jaguar",
+      "slug": "jaguar"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 59,
+    "fields": {
+      "mark": 21,
+      "body": 4,
+      "slug": "jaguar-f-pace",
+      "model": "F-Pace",
+      "complect": "",
+      "description": "Jaguar F-Pace (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/jaguar-f-pace.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=jaguar&modelFamily=f-pace&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 60,
+    "fields": {
+      "mark": 21,
+      "body": 1,
+      "slug": "jaguar-xf-20-25t",
+      "model": "XF",
+      "complect": "2.0 25t",
+      "description": "Jaguar XF в комплектации 2.0 25t (2017) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/jaguar-xf-20-25t.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=jaguar&modelFamily=xf&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 22,
+    "fields": {
+      "name": "Jetta",
+      "slug": "jetta"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 61,
+    "fields": {
+      "mark": 22,
+      "body": 4,
+      "slug": "jetta-vs5",
+      "model": "VS5",
+      "complect": "",
+      "description": "Jetta VS5 (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/jetta-vs5.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=tiguan&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 23,
+    "fields": {
+      "name": "KIA",
+      "slug": "kia"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 62,
+    "fields": {
+      "mark": 23,
+      "body": 1,
+      "slug": "kia-rio-14-at-sedan",
+      "model": "Rio",
+      "complect": "1.4 AT Sedan",
+      "description": "KIA Rio в комплектации 1.4 AT Sedan (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/kia-rio-14-at-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=rio&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 63,
+    "fields": {
+      "mark": 23,
+      "body": 2,
+      "slug": "kia-rio-14-at-hatchback",
+      "model": "Rio",
+      "complect": "1.4 AT Hatchback",
+      "description": "KIA Rio в комплектации 1.4 AT Hatchback (2016) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/kia-rio-14-at-hatchback.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=rio&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 64,
+    "fields": {
+      "mark": 23,
+      "body": 1,
+      "slug": "kia-rio-x-line-sedan",
+      "model": "Rio X-Line",
+      "complect": "Sedan",
+      "description": "KIA Rio X-Line в комплектации Sedan (2019) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/kia-rio-x-line-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=rio&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 65,
+    "fields": {
+      "mark": 23,
+      "body": 2,
+      "slug": "kia-rio-x-line-hatchback",
+      "model": "Rio X-Line",
+      "complect": "Hatchback",
+      "description": "KIA Rio X-Line в комплектации Hatchback (2019) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/kia-rio-x-line-hatchback.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=rio&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 66,
+    "fields": {
+      "mark": 23,
+      "body": 4,
+      "slug": "kia-seltos",
+      "model": "Seltos",
+      "complect": "",
+      "description": "KIA Seltos (2020) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/kia-seltos.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=seltos&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 67,
+    "fields": {
+      "mark": 23,
+      "body": 4,
+      "slug": "kia-soul",
+      "model": "Soul",
+      "complect": "",
+      "description": "KIA Soul (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/kia-soul.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=soul&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 68,
+    "fields": {
+      "mark": 23,
+      "body": 9,
+      "slug": "kia-stinger",
+      "model": "Stinger",
+      "complect": "",
+      "description": "KIA Stinger (2019) — лифтбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/kia-stinger.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=stinger&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 69,
+    "fields": {
+      "mark": 23,
+      "body": 4,
+      "slug": "kia-sportage",
+      "model": "Sportage",
+      "complect": "",
+      "description": "KIA Sportage (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/kia-sportage.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=kia&modelFamily=sportage&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 24,
+    "fields": {
+      "name": "Lexus",
+      "slug": "lexus"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 70,
+    "fields": {
+      "mark": 24,
+      "body": 1,
+      "slug": "lexus-es250",
+      "model": "ES250",
+      "complect": "",
+      "description": "Lexus ES250 (2017) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/lexus-es250.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=es&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 71,
+    "fields": {
+      "mark": 24,
+      "body": 1,
+      "slug": "lexus-es250-rest",
+      "model": "ES250",
+      "complect": "rest",
+      "description": "Lexus ES250 в комплектации rest (2019) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/lexus-es250-rest.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=es&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 72,
+    "fields": {
+      "mark": 24,
+      "body": 3,
+      "slug": "lexus-lx570",
+      "model": "LX570",
+      "complect": "",
+      "description": "Lexus LX570 (2018) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/lexus-lx570.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=lx&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 73,
+    "fields": {
+      "mark": 24,
+      "body": 1,
+      "slug": "lexus-ls460-46-long",
+      "model": "LS460",
+      "complect": "4.6 long",
+      "description": "Lexus LS460 в комплектации 4.6 long (2014) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/lexus-ls460-46-long.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=ls&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 74,
+    "fields": {
+      "mark": 24,
+      "body": 4,
+      "slug": "lexus-nx200",
+      "model": "NX200",
+      "complect": "",
+      "description": "Lexus NX200 (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/lexus-nx200.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=nx&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 75,
+    "fields": {
+      "mark": 24,
+      "body": 4,
+      "slug": "lexus-rx350",
+      "model": "RX350",
+      "complect": "",
+      "description": "Lexus RX350 (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/lexus-rx350.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lexus&modelFamily=rx&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 25,
+    "fields": {
+      "name": "Lifan",
+      "slug": "lifan"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 76,
+    "fields": {
+      "mark": 25,
+      "body": 4,
+      "slug": "lifan-x50",
+      "model": "X50",
+      "complect": "",
+      "description": "Lifan X50 (2016) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/lifan-x50.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lifan&modelFamily=x50&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 26,
+    "fields": {
+      "name": "Land Rover",
+      "slug": "land-rover"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 77,
+    "fields": {
+      "mark": 26,
+      "body": 4,
+      "slug": "land-rover-discovery-sport",
+      "model": "Discovery Sport",
+      "complect": "",
+      "description": "Land Rover Discovery Sport (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/land-rover-discovery-sport.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=land-rover&modelFamily=discovery-sport&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 78,
+    "fields": {
+      "mark": 26,
+      "body": 3,
+      "slug": "land-rover-range-rover-sport-l494-hse",
+      "model": "Range Rover Sport",
+      "complect": "L494 HSE",
+      "description": "Land Rover Range Rover Sport в комплектации L494 HSE (2016) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/land-rover-range-rover-sport-l494-hse.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=land-rover&modelFamily=range-rover-sport&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 79,
+    "fields": {
+      "mark": 26,
+      "body": 4,
+      "slug": "land-rover-evoque-22-d",
+      "model": "Evoque",
+      "complect": "2.2 D",
+      "description": "Land Rover Evoque в комплектации 2.2 D (2015) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/land-rover-evoque-22-d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=land-rover&modelFamily=range-rover-evoque&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 27,
+    "fields": {
+      "name": "Mercedes",
+      "slug": "mercedes"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 80,
+    "fields": {
+      "mark": 27,
+      "body": 1,
+      "slug": "mercedes-c180",
+      "model": "C180",
+      "complect": "",
+      "description": "Mercedes C180 (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/mercedes-c180.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=c-class&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 81,
+    "fields": {
+      "mark": 27,
+      "body": 5,
+      "slug": "mercedes-cls350",
+      "model": "CLS350",
+      "complect": "",
+      "description": "Mercedes CLS350 (2015) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/mercedes-cls350.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=cls-class&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 82,
+    "fields": {
+      "mark": 27,
+      "body": 1,
+      "slug": "mercedes-e200",
+      "model": "E200",
+      "complect": "",
+      "description": "Mercedes E200 (2017) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/mercedes-e200.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=e-class&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 83,
+    "fields": {
+      "mark": 27,
+      "body": 5,
+      "slug": "mercedes-e350-coupe",
+      "model": "E350",
+      "complect": "coupe",
+      "description": "Mercedes E350 в комплектации coupe (2016) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/mercedes-e350-coupe.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=e-class&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 84,
+    "fields": {
+      "mark": 27,
+      "body": 4,
+      "slug": "mercedes-glc-220d",
+      "model": "GLC",
+      "complect": "220d",
+      "description": "Mercedes GLC в комплектации 220d (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/mercedes-glc-220d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=glc&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 85,
+    "fields": {
+      "mark": 27,
+      "body": 4,
+      "slug": "mercedes-glc-250",
+      "model": "GLC",
+      "complect": "250",
+      "description": "Mercedes GLC в комплектации 250 (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/mercedes-glc-250.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=glc&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 86,
+    "fields": {
+      "mark": 27,
+      "body": 3,
+      "slug": "mercedes-gl-350d",
+      "model": "GL",
+      "complect": "350d",
+      "description": "Mercedes GL в комплектации 350d (2015) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/mercedes-gl-350d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=gl-class&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 87,
+    "fields": {
+      "mark": 27,
+      "body": 6,
+      "slug": "mercedes-slk-250-amg",
+      "model": "SLK",
+      "complect": "250 AMG",
+      "description": "Mercedes SLK в комплектации 250 AMG (2014) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/mercedes-slk-250-amg.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=slk-class&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 88,
+    "fields": {
+      "mark": 27,
+      "body": 1,
+      "slug": "mercedes-s400l",
+      "model": "S400L",
+      "complect": "",
+      "description": "Mercedes S400L (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/mercedes-s400l.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mercedes-benz&modelFamily=s-class&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 28,
+    "fields": {
+      "name": "Mini",
+      "slug": "mini"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 89,
+    "fields": {
+      "mark": 28,
+      "body": 2,
+      "slug": "mini-cooper-5d",
+      "model": "Cooper",
+      "complect": "5D",
+      "description": "Mini Cooper в комплектации 5D (2017) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/mini-cooper-5d.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mini&modelFamily=cooper&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 29,
+    "fields": {
+      "name": "Mazda",
+      "slug": "mazda"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 90,
+    "fields": {
+      "mark": 29,
+      "body": 2,
+      "slug": "mazda-3",
+      "model": "3",
+      "complect": "",
+      "description": "Mazda 3 (2018) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/mazda-3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mazda&modelFamily=3&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 91,
+    "fields": {
+      "mark": 29,
+      "body": 6,
+      "slug": "mazda-mx-5",
+      "model": "MX-5",
+      "complect": "(Макс)",
+      "description": "Mazda MX-5 в комплектации (Макс) (2019) — кабриолет. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/mazda-mx-5.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mazda&modelFamily=mx-5&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 30,
+    "fields": {
+      "name": "Mitsubishi",
+      "slug": "mitsubishi"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 92,
+    "fields": {
+      "mark": 30,
+      "body": 3,
+      "slug": "mitsubishi-pajero-2002",
+      "model": "Pajero",
+      "complect": "2002 рестайлинг",
+      "description": "Mitsubishi Pajero в комплектации 2002 рестайлинг (2005) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2005,
+      "photo": "cars/mitsubishi-pajero-2002.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=mitsubishi&modelFamily=pajero&modelYear=2005&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 31,
+    "fields": {
+      "name": "Nissan",
+      "slug": "nissan"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 93,
+    "fields": {
+      "mark": 31,
+      "body": 4,
+      "slug": "nissan-juke",
+      "model": "Juke",
+      "complect": "",
+      "description": "Nissan Juke (2015) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/nissan-juke.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=juke&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 94,
+    "fields": {
+      "mark": 31,
+      "body": 4,
+      "slug": "nissan-qashqai-14-at-2015",
+      "model": "Qashqai",
+      "complect": "1.4 AT 2015",
+      "description": "Nissan Qashqai в комплектации 1.4 AT 2015 (2015) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/nissan-qashqai-14-at-2015.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=qashqai&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 95,
+    "fields": {
+      "mark": 31,
+      "body": 4,
+      "slug": "nissan-qashqai-2018",
+      "model": "Qashqai",
+      "complect": "2018",
+      "description": "Nissan Qashqai в комплектации 2018 (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/nissan-qashqai-2018.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=qashqai&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 96,
+    "fields": {
+      "mark": 31,
+      "body": 1,
+      "slug": "nissan-almera",
+      "model": "Almera",
+      "complect": "",
+      "description": "Nissan Almera (2014) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/nissan-almera.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=almera&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 97,
+    "fields": {
+      "mark": 31,
+      "body": 3,
+      "slug": "nissan-patrol",
+      "model": "Patrol",
+      "complect": "",
+      "description": "Nissan Patrol (2016) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/nissan-patrol.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=patrol&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 98,
+    "fields": {
+      "mark": 31,
+      "body": 8,
+      "slug": "nissan-pressage",
+      "model": "Pressage",
+      "complect": "",
+      "description": "Nissan Pressage (2003) — минивэн. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2003,
+      "photo": "cars/nissan-pressage.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=nissan&modelFamily=presage&modelYear=2003&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 32,
+    "fields": {
+      "name": "Omoda",
+      "slug": "omoda"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 99,
+    "fields": {
+      "mark": 32,
+      "body": 4,
+      "slug": "omoda-c5",
+      "model": "C5",
+      "complect": "",
+      "description": "Omoda C5 (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/omoda-c5.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=omoda&modelFamily=c5&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 100,
+    "fields": {
+      "mark": 32,
+      "body": 1,
+      "slug": "omoda-s5",
+      "model": "S5",
+      "complect": "",
+      "description": "Omoda S5 (2023) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/omoda-s5.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=omoda&modelFamily=s5&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 33,
+    "fields": {
+      "name": "Opel",
+      "slug": "opel"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 101,
+    "fields": {
+      "mark": 33,
+      "body": 9,
+      "slug": "opel-insignia",
+      "model": "Insignia",
+      "complect": "",
+      "description": "Opel Insignia (2016) — лифтбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/opel-insignia.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=opel&modelFamily=insignia&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 102,
+    "fields": {
+      "mark": 33,
+      "body": 4,
+      "slug": "opel-grandland",
+      "model": "GrandLand",
+      "complect": "",
+      "description": "Opel GrandLand (2019) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/opel-grandland.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=opel&modelFamily=grandland&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 34,
+    "fields": {
+      "name": "Peugeot",
+      "slug": "peugeot"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 103,
+    "fields": {
+      "mark": 34,
+      "body": 4,
+      "slug": "peugeot-5008",
+      "model": "5008",
+      "complect": "",
+      "description": "Peugeot 5008 (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/peugeot-5008.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=peugeot&modelFamily=5008&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 35,
+    "fields": {
+      "name": "Ravon",
+      "slug": "ravon"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 104,
+    "fields": {
+      "mark": 35,
+      "body": 1,
+      "slug": "ravon-r2",
+      "model": "R2",
+      "complect": "",
+      "description": "Ravon R2 (2017) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/ravon-r2.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=ravon&modelFamily=r2&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 36,
+    "fields": {
+      "name": "Renault",
+      "slug": "renault"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 105,
+    "fields": {
+      "mark": 36,
+      "body": 4,
+      "slug": "renault-arkana",
+      "model": "Arkana",
+      "complect": "",
+      "description": "Renault Arkana (2020) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/renault-arkana.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=renault&modelFamily=arkana&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 106,
+    "fields": {
+      "mark": 36,
+      "body": 4,
+      "slug": "renault-kaptur",
+      "model": "Kaptur",
+      "complect": "",
+      "description": "Renault Kaptur (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/renault-kaptur.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=renault&modelFamily=captur&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 107,
+    "fields": {
+      "mark": 36,
+      "body": 1,
+      "slug": "renault-logan",
+      "model": "Logan",
+      "complect": "",
+      "description": "Renault Logan (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/renault-logan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=renault&modelFamily=logan&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 108,
+    "fields": {
+      "mark": 36,
+      "body": 2,
+      "slug": "renault-megane",
+      "model": "Megane",
+      "complect": "",
+      "description": "Renault Megane (2015) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/renault-megane.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=renault&modelFamily=megane&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 109,
+    "fields": {
+      "mark": 36,
+      "body": 4,
+      "slug": "renault-stepway",
+      "model": "Stepway",
+      "complect": "",
+      "description": "Renault Stepway (2017) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/renault-stepway.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=renault&modelFamily=sandero&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 37,
+    "fields": {
+      "name": "Smart",
+      "slug": "smart"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 110,
+    "fields": {
+      "mark": 37,
+      "body": 2,
+      "slug": "smart-fortwo",
+      "model": "ForTwo",
+      "complect": "",
+      "description": "Smart ForTwo (2016) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/smart-fortwo.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=smart&modelFamily=fortwo&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 111,
+    "fields": {
+      "mark": 37,
+      "body": 2,
+      "slug": "smart-forfour",
+      "model": "ForFour",
+      "complect": "",
+      "description": "Smart ForFour (2017) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/smart-forfour.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=smart&modelFamily=forfour&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 38,
+    "fields": {
+      "name": "Sollers",
+      "slug": "sollers"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 112,
+    "fields": {
+      "mark": 38,
+      "body": 10,
+      "slug": "sollers-atlant",
+      "model": "Atlant",
+      "complect": "",
+      "description": "Sollers Atlant (2023) — пикап. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/sollers-atlant.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=ford&modelFamily=atlant&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 39,
+    "fields": {
+      "name": "Skoda",
+      "slug": "skoda"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 113,
+    "fields": {
+      "mark": 39,
+      "body": 4,
+      "slug": "skoda-karoq",
+      "model": "Karoq",
+      "complect": "",
+      "description": "Skoda Karoq (2019) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/skoda-karoq.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=skoda&modelFamily=karoq&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 114,
+    "fields": {
+      "mark": 39,
+      "body": 4,
+      "slug": "skoda-kodiaq",
+      "model": "Kodiaq",
+      "complect": "",
+      "description": "Skoda Kodiaq (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/skoda-kodiaq.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=skoda&modelFamily=kodiaq&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 115,
+    "fields": {
+      "mark": 39,
+      "body": 1,
+      "slug": "skoda-octavia-16-at-sedan",
+      "model": "Octavia",
+      "complect": "1.6 AT Sedan",
+      "description": "Skoda Octavia в комплектации 1.6 AT Sedan (2016) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/skoda-octavia-16-at-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=skoda&modelFamily=octavia&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 116,
+    "fields": {
+      "mark": 39,
+      "body": 1,
+      "slug": "skoda-rapid",
+      "model": "Rapid",
+      "complect": "",
+      "description": "Skoda Rapid (2015) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/skoda-rapid.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=skoda&modelFamily=rapid&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 40,
+    "fields": {
+      "name": "Suzuki",
+      "slug": "suzuki"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 117,
+    "fields": {
+      "mark": 40,
+      "body": 2,
+      "slug": "suzuki-swift",
+      "model": "Swift",
+      "complect": "",
+      "description": "Suzuki Swift (2017) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2017,
+      "photo": "cars/suzuki-swift.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=suzuki&modelFamily=swift&modelYear=2017&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 41,
+    "fields": {
+      "name": "Tesla",
+      "slug": "tesla"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 118,
+    "fields": {
+      "mark": 41,
+      "body": 1,
+      "slug": "tesla-model-3",
+      "model": "Model 3",
+      "complect": "",
+      "description": "Tesla Model 3 (2021) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2021,
+      "photo": "cars/tesla-model-3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=tesla&modelFamily=model-3&modelYear=2021&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 42,
+    "fields": {
+      "name": "Toyota",
+      "slug": "toyota"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 119,
+    "fields": {
+      "mark": 42,
+      "body": 1,
+      "slug": "toyota-camry-vii-rest-50",
+      "model": "Camry",
+      "complect": "VII Rest (50)",
+      "description": "Toyota Camry в комплектации VII Rest (50) (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/toyota-camry-vii-rest-50.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=camry&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 120,
+    "fields": {
+      "mark": 42,
+      "body": 1,
+      "slug": "toyota-corolla-1997-100",
+      "model": "Corolla",
+      "complect": "1997 год 100 кузов",
+      "description": "Toyota Corolla в комплектации 1997 год 100 кузов (1997) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 1997,
+      "photo": "cars/toyota-corolla-1997-100.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=corolla&modelYear=1997&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 121,
+    "fields": {
+      "mark": 42,
+      "body": 7,
+      "slug": "toyota-fielder",
+      "model": "Fielder",
+      "complect": "",
+      "description": "Toyota Fielder (2010) — универсал. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2010,
+      "photo": "cars/toyota-fielder.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=corolla&modelYear=2010&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 122,
+    "fields": {
+      "mark": 42,
+      "body": 5,
+      "slug": "toyota-gt86",
+      "model": "GT86",
+      "complect": "",
+      "description": "Toyota GT86 (2016) — купе. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/toyota-gt86.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=gr86&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 123,
+    "fields": {
+      "mark": 42,
+      "body": 4,
+      "slug": "toyota-rav-4-v-xa50",
+      "model": "RAV 4",
+      "complect": "( V XA50)",
+      "description": "Toyota RAV 4 в комплектации ( V XA50) (2020) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/toyota-rav-4-v-xa50.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=rav4&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 124,
+    "fields": {
+      "mark": 42,
+      "body": 8,
+      "slug": "toyota-spacio-2002-2",
+      "model": "Spacio",
+      "complect": "2002 год 2 поколение",
+      "description": "Toyota Spacio в комплектации 2002 год 2 поколение (2002) — минивэн. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2002,
+      "photo": "cars/toyota-spacio-2002-2.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=spacio&modelYear=2002&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 125,
+    "fields": {
+      "mark": 42,
+      "body": 8,
+      "slug": "toyota-town-ace-noah-super-extra-limo",
+      "model": "Town Ace Noah",
+      "complect": "Super Extra Limo",
+      "description": "Toyota Town Ace Noah в комплектации Super Extra Limo (2005) — минивэн. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2005,
+      "photo": "cars/toyota-town-ace-noah-super-extra-limo.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=hiace&modelYear=2005&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 126,
+    "fields": {
+      "mark": 42,
+      "body": 3,
+      "slug": "toyota-land-cruiser-100",
+      "model": "Land Cruiser",
+      "complect": "100",
+      "description": "Toyota Land Cruiser в комплектации 100 (2006) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2006,
+      "photo": "cars/toyota-land-cruiser-100.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=land-cruiser&modelYear=2006&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 127,
+    "fields": {
+      "mark": 42,
+      "body": 1,
+      "slug": "toyota-camry-24",
+      "model": "Camry",
+      "complect": "2.4",
+      "description": "Toyota Camry в комплектации 2.4 (2012) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2012,
+      "photo": "cars/toyota-camry-24.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=camry&modelYear=2012&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 128,
+    "fields": {
+      "mark": 42,
+      "body": 1,
+      "slug": "toyota-camry-70",
+      "model": "Camry",
+      "complect": "70",
+      "description": "Toyota Camry в комплектации 70 (2020) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/toyota-camry-70.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=camry&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 129,
+    "fields": {
+      "mark": 42,
+      "body": 10,
+      "slug": "toyota-town-ace",
+      "model": "Town Ace",
+      "complect": "Грузовик",
+      "description": "Toyota Town Ace в комплектации Грузовик (2008) — пикап. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2008,
+      "photo": "cars/toyota-town-ace.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=hiace&modelYear=2008&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 130,
+    "fields": {
+      "mark": 42,
+      "body": 4,
+      "slug": "toyota-harrier-240g",
+      "model": "Harrier",
+      "complect": "240G",
+      "description": "Toyota Harrier в комплектации 240G (2010) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2010,
+      "photo": "cars/toyota-harrier-240g.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=harrier&modelYear=2010&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 131,
+    "fields": {
+      "mark": 42,
+      "body": 4,
+      "slug": "toyota-rav4-3",
+      "model": "RAV4",
+      "complect": "3 поколение",
+      "description": "Toyota RAV4 в комплектации 3 поколение (2008) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2008,
+      "photo": "cars/toyota-rav4-3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=toyota&modelFamily=rav4&modelYear=2008&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 43,
+    "fields": {
+      "name": "Volkswagen",
+      "slug": "volkswagen"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 132,
+    "fields": {
+      "mark": 43,
+      "body": 4,
+      "slug": "volkswagen-id4",
+      "model": "ID.4",
+      "complect": "",
+      "description": "Volkswagen ID.4 (2022) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2022,
+      "photo": "cars/volkswagen-id4.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=id4&modelYear=2022&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 133,
+    "fields": {
+      "mark": 43,
+      "body": 1,
+      "slug": "volkswagen-polo-sedan",
+      "model": "Polo",
+      "complect": "Sedan",
+      "description": "Volkswagen Polo в комплектации Sedan (2015) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2015,
+      "photo": "cars/volkswagen-polo-sedan.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=polo&modelYear=2015&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 134,
+    "fields": {
+      "mark": 43,
+      "body": 2,
+      "slug": "volkswagen-polo-vi",
+      "model": "Polo",
+      "complect": "VI",
+      "description": "Volkswagen Polo в комплектации VI (2020) — хэтчбек. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2020,
+      "photo": "cars/volkswagen-polo-vi.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=polo&modelYear=2020&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 135,
+    "fields": {
+      "mark": 43,
+      "body": 4,
+      "slug": "volkswagen-tiguan-ii",
+      "model": "Tiguan",
+      "complect": "II",
+      "description": "Volkswagen Tiguan в комплектации II (2019) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2019,
+      "photo": "cars/volkswagen-tiguan-ii.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=tiguan&modelYear=2019&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 136,
+    "fields": {
+      "mark": 43,
+      "body": 3,
+      "slug": "volkswagen-touareg",
+      "model": "Touareg",
+      "complect": "",
+      "description": "Volkswagen Touareg (2018) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/volkswagen-touareg.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=touareg&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 137,
+    "fields": {
+      "mark": 43,
+      "body": 8,
+      "slug": "volkswagen-touran",
+      "model": "Touran",
+      "complect": "",
+      "description": "Volkswagen Touran (2016) — минивэн. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2016,
+      "photo": "cars/volkswagen-touran.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volkswagen&modelFamily=touran&modelYear=2016&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 44,
+    "fields": {
+      "name": "Volvo",
+      "slug": "volvo"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 138,
+    "fields": {
+      "mark": 44,
+      "body": 4,
+      "slug": "volvo-xc60",
+      "model": "XC60",
+      "complect": "",
+      "description": "Volvo XC60 (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/volvo-xc60.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volvo&modelFamily=xc60&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 45,
+    "fields": {
+      "name": "Лада",
+      "slug": "mark-45"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 139,
+    "fields": {
+      "mark": 45,
+      "body": 1,
+      "slug": "110",
+      "model": "110",
+      "complect": "Седан",
+      "description": "Лада 110 в комплектации Седан (2005) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2005,
+      "photo": "cars/110.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lada&modelFamily=vesta&modelYear=2005&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 140,
+    "fields": {
+      "mark": 45,
+      "body": 1,
+      "slug": "granta",
+      "model": "Granta",
+      "complect": "Седан",
+      "description": "Лада Granta в комплектации Седан (2018) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2018,
+      "photo": "cars/granta.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lada&modelFamily=granta&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 46,
+    "fields": {
+      "name": "Москвич",
+      "slug": "mark-46"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 141,
+    "fields": {
+      "mark": 46,
+      "body": 4,
+      "slug": "3",
+      "model": "3",
+      "complect": "",
+      "description": "Москвич 3 (2023) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2023,
+      "photo": "cars/3.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=moskvich&modelFamily=3&modelYear=2023&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 47,
+    "fields": {
+      "name": "ВАЗ",
+      "slug": "mark-47"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 142,
+    "fields": {
+      "mark": 47,
+      "body": 1,
+      "slug": "2105",
+      "model": "2105",
+      "complect": "Седан",
+      "description": "ВАЗ 2105 в комплектации Седан (1990) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 1990,
+      "photo": "cars/2105.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lada&modelFamily=vesta&modelYear=1990&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 143,
+    "fields": {
+      "mark": 47,
+      "body": 1,
+      "slug": "2106",
+      "model": "2106",
+      "complect": "Седан",
+      "description": "ВАЗ 2106 в комплектации Седан (1992) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 1992,
+      "photo": "cars/2106.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lada&modelFamily=vesta&modelYear=1992&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 144,
+    "fields": {
+      "mark": 47,
+      "body": 1,
+      "slug": "2107",
+      "model": "2107",
+      "complect": "Седан",
+      "description": "ВАЗ 2107 в комплектации Седан (1995) — седан. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 1995,
+      "photo": "cars/2107.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=lada&modelFamily=vesta&modelYear=1995&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  },
+  {
+    "model": "cars.mark",
+    "pk": 48,
+    "fields": {
+      "name": "УАЗ",
+      "slug": "mark-48"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 145,
+    "fields": {
+      "mark": 48,
+      "body": 3,
+      "slug": "3151",
+      "model": "3151",
+      "complect": "",
+      "description": "УАЗ 3151 (2000) — внедорожник. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2000,
+      "photo": "cars/3151.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=uaz&modelFamily=patriot&modelYear=2000&width=800&angle=23&zoomType=fullscreen",
+      "time_create": "2024-01-01T00:00:00+00:00"
+    }
+  }
+]

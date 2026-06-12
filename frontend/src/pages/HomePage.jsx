@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getCars, getMarks, getStats } from '../api';
 import { useApp } from '../context/AppContext';
@@ -20,6 +20,9 @@ export default function HomePage() {
   const [searchInput, setSearchInput] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [statsHidden, setStatsHidden] = useState(false);
+  const searchAnchorRef = useRef(null);
+  const searchInputRef = useRef(null);
 
   useEffect(() => {
     getMarks()
@@ -35,6 +38,16 @@ export default function HomePage() {
     setSelectedBody(body);
     setPage(1);
   }, [searchParams]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY < 60) {
+        setStatsHidden(false);
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const syncParams = useCallback((mark, body) => {
     const params = {};
@@ -76,6 +89,22 @@ export default function HomePage() {
     setPage(1);
   };
 
+  const clearFilters = () => {
+    setSearch('');
+    setSearchInput('');
+    setSearchParams({});
+    setPage(1);
+  };
+
+  const handleCarsStatClick = () => {
+    clearFilters();
+    setStatsHidden(true);
+    searchAnchorRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.setTimeout(() => {
+      searchInputRef.current?.focus();
+    }, 400);
+  };
+
   return (
     <>
       <section className="hero">
@@ -83,11 +112,15 @@ export default function HomePage() {
         <h1 className="hero__title">{t.heroTitle}</h1>
         <p className="hero__subtitle">{t.heroSubtitle}</p>
         {stats && (
-          <div className="stats">
-            <div className="stat">
+          <div className={`stats${statsHidden ? ' stats--hidden' : ''}`}>
+            <button
+              type="button"
+              className="stat stat--clickable"
+              onClick={handleCarsStatClick}
+            >
               <div className="stat__value">{stats.total_cars}</div>
               <div className="stat__label">{t.statCars}</div>
-            </div>
+            </button>
             <Link to="/marks" className="stat stat--clickable">
               <div className="stat__value">{stats.total_marks}</div>
               <div className="stat__label">{t.statMarks}</div>
@@ -100,9 +133,10 @@ export default function HomePage() {
         )}
       </section>
 
-      <div className="filters">
+      <div className="filters" ref={searchAnchorRef}>
         <form onSubmit={handleSearch} className="search-form">
           <input
+            ref={searchInputRef}
             className="search-input"
             type="search"
             placeholder={t.searchPlaceholder}

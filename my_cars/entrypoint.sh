@@ -17,8 +17,14 @@ done
 echo "PostgreSQL is up"
 
 python manage.py migrate --noinput
-python manage.py load_cars
-python manage.py load_cars --update-photos
+
+if [ -f fixtures/cars.json ]; then
+  python manage.py import_cars
+else
+  python manage.py load_cars
+  python manage.py download_car_photos
+fi
+
 python manage.py collectstatic --noinput
 
 exec gunicorn my_cars.wsgi:application --bind 0.0.0.0:8000 --workers 2

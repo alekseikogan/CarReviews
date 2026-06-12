@@ -56,7 +56,38 @@ npm run dev
 
 ## Загрузка данных
 
+Данные хранятся в **`my_cars/fixtures/cars.json`** (145 машин, марки, кузова).  
+Фото — в **`my_cars/media/cars/`** (локально на диске, без внешних URL при отдаче).
+
+### Docker (автоматически)
+
+При `docker compose up` backend выполняет `import_cars` — читает fixture и привязывает фото с диска.
+
+### Вручную
+
 ```bash
-python manage.py load_cars          # загрузить, если БД пуста
-python manage.py load_cars --force  # пересоздать все записи
+cd my_cars
+python manage.py migrate
+python manage.py import_cars              # импорт из fixtures/cars.json
+python manage.py import_cars --force      # пересоздать БД из fixture
+
+python manage.py generate_fixture         # пересобрать cars.json из cars_data.py
+python manage.py download_car_photos      # скачать фото в media/cars/
+python manage.py download_car_photos --force
+python manage.py export_cars              # экспорт БД → fixtures/cars.json
+```
+
+### Скрипты (из корня проекта)
+
+```powershell
+.\scripts\import_data.ps1           # импорт
+.\scripts\import_data.ps1 -Force
+.\scripts\export_data.ps1           # экспорт
+.\scripts\download_photos.ps1       # скачать все фото
+```
+
+```bash
+./scripts/import_data.sh
+./scripts/export_data.sh
+./scripts/download_photos.sh
 ```
