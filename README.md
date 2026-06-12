@@ -91,3 +91,42 @@ python manage.py export_cars              # экспорт БД → fixtures/car
 ./scripts/export_data.sh
 ./scripts/download_photos.sh
 ```
+
+## Деплой на AWS EC2 (ветка `for_ec2_amazon`)
+
+Стек: **Nginx (порт 80)** + **Django backend** + **RDS PostgreSQL** (без контейнера `db`).
+
+### Подготовка на сервере
+
+```bash
+git clone https://github.com/alekseikogan/CarReviews.git
+cd CarReviews
+git checkout for_ec2_amazon
+
+cp .env.example .env
+# отредактируйте .env: RDS endpoint, пароль, ALLOWED_HOSTS (IP/домен EC2)
+```
+
+Security Group EC2: открыть **80** (HTTP).  
+RDS: разрешить вход с security group EC2 на порт **5432**.
+
+### Запуск
+
+```bash
+./scripts/deploy_ec2.sh
+```
+
+Скрипт собирает React (`npm run build` → `frontend/dist`) и поднимает контейнеры.
+
+Вручную:
+
+```bash
+cd frontend && npm ci && npm run build && cd ..
+docker compose up -d --build
+```
+
+- **Сайт:** `http://<ec2-ip>/`
+- **API:** `http://<ec2-ip>/api/`
+- **Админка:** `http://<ec2-ip>/admin/`
+
+Фронтенд ходит в API по относительному пути `/api` (без порта 3000).
