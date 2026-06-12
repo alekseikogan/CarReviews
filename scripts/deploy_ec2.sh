@@ -7,13 +7,7 @@ if [ ! -f .env ]; then
   exit 1
 fi
 
-echo "==> Сборка React (frontend/dist)..."
-cd frontend
-npm ci
-npm run build
-cd ..
-
-echo "==> Запуск контейнеров..."
+echo "==> Сборка и запуск контейнеров (React собирается внутри образа nginx)..."
 docker compose up -d --build
 
-echo "==> Готово: http://<ваш-ec2-ip>/"
+echo "==> Готово: http://<ваш-ec2-ip>/automate/"

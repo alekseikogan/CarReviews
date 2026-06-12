@@ -6,13 +6,7 @@ if (-not (Test-Path ".env")) {
     Write-Error "Создайте .env из .env.example и укажите RDS credentials"
 }
 
-Write-Host "==> Сборка React (frontend/dist)..."
-Set-Location frontend
-npm ci
-npm run build
-Set-Location ..
-
-Write-Host "==> Запуск контейнеров..."
+Write-Host "==> Сборка и запуск контейнеров (React собирается внутри образа nginx)..."
 docker compose up -d --build
 
-Write-Host "==> Готово: http://<ваш-ec2-ip>/"
+Write-Host "==> Готово: http://<ваш-ec2-ip>/automate/"

@@ -116,17 +116,17 @@ RDS: разрешить вход с security group EC2 на порт **5432**.
 ./scripts/deploy_ec2.sh
 ```
 
-Скрипт собирает React (`npm run build` → `frontend/dist`) и поднимает контейнеры.
+Скрипт собирает образ nginx (React `npm run build` внутри Docker) и поднимает контейнеры.
 
 Вручную:
 
 ```bash
-cd frontend && npm ci && npm run build && cd ..
 docker compose up -d --build
 ```
 
-- **Сайт:** `http://<ec2-ip>/`
+- **Сайт:** `http://<ec2-ip>/automate/`
 - **API:** `http://<ec2-ip>/api/`
 - **Админка:** `http://<ec2-ip>/admin/`
 
+Статика React вшита в образ nginx — не нужен `frontend/dist` на хосте.  
 Фронтенд ходит в API по относительному пути `/api` (без порта 3000).
