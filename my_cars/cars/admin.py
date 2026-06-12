@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Car, Body, Mark
+from .models import Body, Car, Comment, Mark
 
 
 class CarAdmin(admin.ModelAdmin):
@@ -23,6 +23,12 @@ class MarkAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'name',)
     search_fields = ('name',)
     prepopulated_fields = {'slug': ('name',)}
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'car', 'user', 'time_create')
+    search_fields = ('text', 'user__username', 'car__model')
 
 
 admin.site.register(Car, CarAdmin)

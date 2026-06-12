@@ -111,3 +111,28 @@ class Car(models.Model):
 
     def get_absolute_url(self):
         return reverse('show_car', kwargs={'car': self.slug})
+
+
+class Comment(models.Model):
+    car = models.ForeignKey(
+        Car,
+        on_delete=models.CASCADE,
+        related_name='comments',
+        verbose_name='Автомобиль',
+    )
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='car_comments',
+        verbose_name='Автор',
+    )
+    text = models.TextField(max_length=2000, verbose_name='Текст')
+    time_create = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
+
+    class Meta:
+        ordering = ('-time_create',)
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Комментарии'
+
+    def __str__(self):
+        return f'{self.user.username} → {self.car}'

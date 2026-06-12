@@ -1,15 +1,19 @@
 import { NavLink } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
+import { useAuth } from '../context/AuthContext';
 
 export default function Header() {
   const { lang, setLang, theme, setTheme, t } = useApp();
+  const { isAuthenticated, user } = useAuth();
 
   return (
     <header className="header">
       <div className="header__inner">
         <NavLink to="/" className="logo">
           <img src="/favicon-128.png" alt="DriveLog" className="logo__icon" />
-          Drive<span>Log</span>
+          <span className="logo__word">
+            Drive<span className="logo__accent">Log</span>
+          </span>
         </NavLink>
 
         <nav className="nav">
@@ -29,6 +33,13 @@ export default function Header() {
         </nav>
 
         <div className="header__controls">
+          <NavLink
+            to={isAuthenticated ? '/account' : '/login'}
+            className={({ isActive }) => `nav__link nav__link--account${isActive ? ' nav__link--active' : ''}`}
+          >
+            {isAuthenticated ? (user?.username || t.account) : t.login}
+          </NavLink>
+
           <div className="theme-toggle" role="group" aria-label="Theme">
             <button
               type="button"

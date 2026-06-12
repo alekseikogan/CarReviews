@@ -1,10 +1,16 @@
 from django.db.models import Count, Q
-from rest_framework import generics, viewsets
+from rest_framework import generics, permissions, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from .models import Body, Car, Mark
-from .serializers import BodySerializer, CarDetailSerializer, CarListSerializer, MarkSerializer
+from .models import Body, Car, Comment, Mark
+from .serializers import (
+    BodySerializer,
+    CarDetailSerializer,
+    CarListSerializer,
+    CommentSerializer,
+    MarkSerializer,
+)
 
 
 class MarkViewSet(viewsets.ReadOnlyModelViewSet):
@@ -52,3 +58,25 @@ class CarViewSet(viewsets.ReadOnlyModelViewSet):
             'total_marks': Mark.objects.count(),
             'total_bodies': Body.objects.count(),
         })
+
+    @action(detail=True, methods=['get', 'post'], url_path='comments')
+    def comments(self, request, slug=None):
+        car = self.get_object()
+        if request.method == 'GET':
+            qs = car.comments.select_related('user').all()
+            serializer = CommentSerializer(qs, many=True, context={'request': request})
+            return Response(serializer.data)
+        if not request.user.is_authenticated:
+            return Response({'detail': 'Требуется авторизация.'}, status=status.HTTP_401_UNAUTHORIZED)
+        serializer = CommentSerializer(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        serializer.save(user=request.user, car=car)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+class CommentDestroyView(generics.DestroyAPIView):
+    serializer_class = CommentSerializer
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def get_queryset(self):
+        return Comment.objects.filter(user=self.request.user)

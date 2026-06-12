@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { getCar } from '../api';
 import { useApp } from '../context/AppContext';
 import { fallbackPhoto } from '../utils/photos';
+import CarComments from '../components/CarComments';
 
 export default function CarDetailPage() {
   const { slug } = useParams();
@@ -60,6 +61,8 @@ export default function CarDetailPage() {
           }}
         />
       </div>
+
+      <CarComments carSlug={car.slug} />
     </article>
   );
 }

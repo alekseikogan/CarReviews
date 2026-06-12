@@ -112,7 +112,43 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
 }
+
+from datetime import timedelta  # noqa: E402
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+}
+
+FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://localhost:3000')
+
+def _env(*names, default=''):
+    for name in names:
+        value = os.environ.get(name)
+        if value not in (None, ''):
+            return value
+    return default
+
+
+EMAIL_BACKEND = _env(
+    'EMAIL_BACKEND', 'DJANGO_EMAIL_BACKEND',
+    default='django.core.mail.backends.console.EmailBackend',
+)
+EMAIL_HOST = _env('EMAIL_HOST', 'DJANGO_EMAIL_HOST', default='')
+EMAIL_PORT = int(_env('EMAIL_PORT', 'DJANGO_EMAIL_PORT', default='587'))
+EMAIL_HOST_USER = _env('EMAIL_HOST_USER', 'DJANGO_EMAIL_HOST_USER', default='')
+EMAIL_HOST_PASSWORD = _env(
+    'EMAIL_HOST_PASSWORD', 'DJANGO_EMAIL_HOST_PASSWORD', 'RESEND_API_KEY',
+    default='',
+)
+EMAIL_USE_TLS = _env('EMAIL_USE_TLS', 'DJANGO_EMAIL_USE_TLS', default='True').lower() in (
+    'true', '1', 'yes',
+)
+DEFAULT_FROM_EMAIL = _env('DEFAULT_FROM_EMAIL', default='noreply@drivelog.live')
 
 CORS_ALLOWED_ORIGINS = [
     origin.strip()

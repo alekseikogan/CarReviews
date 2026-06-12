@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Body, Car, Mark
+from .models import Body, Car, Comment, Mark
 
 
 def _car_photo(car):
@@ -73,3 +73,19 @@ class CarListSerializer(serializers.ModelSerializer):
 class CarDetailSerializer(CarListSerializer):
     class Meta(CarListSerializer.Meta):
         fields = CarListSerializer.Meta.fields
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    author_name = serializers.CharField(source='user.username', read_only=True)
+    is_owner = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Comment
+        fields = ('id', 'text', 'author_name', 'time_create', 'is_owner')
+        read_only_fields = ('id', 'author_name', 'time_create', 'is_owner')
+
+    def get_is_owner(self, obj):
+        request = self.context.get('request')
+        if not request or not request.user.is_authenticated:
+            return False
+        return obj.user_id == request.user.id
