@@ -167,7 +167,7 @@ CARS = [
     ('Volkswagen', 'Tiguan', 'II', 'crossover', 2019, ''),
     ('Volkswagen', 'Touareg', '', 'suv', 2018, ''),
     ('Volkswagen', 'Touran', '', 'minivan', 2016, ''),
-    ('Volvo', 'XC60', '', 'crossover', 2018, ''),
+    ('Volvo', 'V70', '', 'wagon', 2014, ''),
     ('Лада', '110', 'Седан', 'sedan', 2005, ''),
     ('Лада', 'Granta', 'Седан', 'sedan', 2018, ''),
     ('Москвич', '3', '', 'crossover', 2023, ''),

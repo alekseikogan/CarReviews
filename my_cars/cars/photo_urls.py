@@ -227,7 +227,7 @@ def model_family(mark: str, model: str, complect: str = '') -> str:
         'mitsubishi': {'pajero': 'pajero'},
         'suzuki': {'swift': 'swift'},
         'tesla': {'model 3': 'model-3'},
-        'volvo': {'xc60': 'xc60'},
+        'volvo': {'xc60': 'xc60', 'v70': 'v70'},
         'jaguar': {'f-pace': 'f-pace', 'xf': 'xf'},
         'cadillac': {'ats': 'ats', 'escalade': 'escalade', 'srx': 'xt5'},
         'mini': {'cooper': 'cooper'},

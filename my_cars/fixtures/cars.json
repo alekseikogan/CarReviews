@@ -2628,14 +2628,14 @@
     "pk": 138,
     "fields": {
       "mark": 44,
-      "body": 4,
-      "slug": "volvo-xc60",
-      "model": "XC60",
+      "body": 7,
+      "slug": "volvo-v70",
+      "model": "V70",
       "complect": "",
-      "description": "Volvo XC60 (2018) — кроссовер. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
-      "year": 2018,
-      "photo": "cars/volvo-xc60.jpg",
-      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volvo&modelFamily=xc60&modelYear=2018&width=800&angle=23&zoomType=fullscreen",
+      "description": "Volvo V70 (2014) — универсал. Проверил на практике управляемость, комфорт и поведение на дороге. Отдельно отмечу посадку, обзорность и отклик на руль — именно эти впечатления остались после поездки за рулём.",
+      "year": 2014,
+      "photo": "cars/volvo-v70.jpg",
+      "photo_url": "https://cdn.imagin.studio/getimage?customer=img&make=volvo&modelFamily=v70&modelYear=2014&width=800&angle=23&zoomType=fullscreen",
       "time_create": "2024-01-01T00:00:00+00:00"
     }
   },
