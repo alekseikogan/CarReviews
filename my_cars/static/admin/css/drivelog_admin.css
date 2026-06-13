@@ -1,0 +1,138 @@
+:root,
+html[data-theme="light"] {
+  --primary: #d97706;
+  --secondary: #b45309;
+  --link-fg: #92400e;
+  --header-bg: #fbbf24;
+  --header-color: #1c1917;
+  --header-link-color: #292524;
+  --breadcrumbs-bg: #fef3c7;
+  --breadcrumbs-fg: #78350f;
+  --breadcrumbs-link-fg: #b45309;
+  --hairline-color: #fde68a;
+  --border-color: #fcd34d;
+  --body-bg: #fffbeb;
+  --body-quiet-color: #78716c;
+  --body-medium-color: #57534e;
+  --body-loud-color: #1c1917;
+  --darkened-bg: #fef3c7;
+  --selected-bg: #fde68a;
+  --selected-row: #fef9c3;
+  --button-bg: #f59e0b;
+  --button-fg: #1c1917;
+  --button-hover-bg: #d97706;
+  --default-button-bg: #b45309;
+  --default-button-hover-bg: #92400e;
+  --close-button-bg: #78716c;
+  --close-button-hover-bg: #57534e;
+  --delete-button-bg: #dc2626;
+  --delete-button-hover-bg: #b91c1c;
+  --object-tools-bg: #d97706;
+  --object-tools-hover-bg: #b45309;
+  --object-tools-fg: #fff;
+}
+
+html[data-theme="dark"] {
+  --primary: #f59e0b;
+  --secondary: #d97706;
+  --link-fg: #fcd34d;
+  --header-bg: #78350f;
+  --header-color: #fef3c7;
+  --header-link-color: #fde68a;
+  --breadcrumbs-bg: #451a03;
+  --breadcrumbs-fg: #fde68a;
+  --breadcrumbs-link-fg: #fbbf24;
+  --hairline-color: #92400e;
+  --border-color: #b45309;
+  --body-bg: #1c1917;
+  --body-quiet-color: #a8a29e;
+  --body-medium-color: #d6d3d1;
+  --body-loud-color: #fef3c7;
+  --darkened-bg: #292524;
+  --selected-bg: #451a03;
+  --selected-row: #292524;
+  --button-bg: #d97706;
+  --button-fg: #fff;
+  --button-hover-bg: #b45309;
+  --default-button-bg: #92400e;
+  --default-button-hover-bg: #78350f;
+  --object-tools-bg: #d97706;
+  --object-tools-hover-bg: #b45309;
+}
+
+#header {
+  background: var(--header-bg);
+  color: var(--header-color);
+}
+
+#header a:link,
+#header a:visited {
+  color: var(--header-link-color);
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+  background: var(--primary);
+}
+
+div.breadcrumbs {
+  background: var(--breadcrumbs-bg);
+  color: var(--breadcrumbs-fg);
+}
+
+div.breadcrumbs a {
+  color: var(--breadcrumbs-link-fg);
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+  background: var(--button-bg);
+  color: var(--button-fg);
+}
+
+.button:active,
+input[type="submit"]:active,
+.button:focus,
+input[type="submit"]:focus,
+.button:hover,
+input[type="submit"]:hover {
+  background: var(--button-hover-bg);
+}
+
+.button.default,
+input[type="submit"].default,
+.submit-row input.default {
+  background: var(--default-button-bg);
+}
+
+.button.default:active,
+input[type="submit"].default:active,
+.button.default:focus,
+input[type="submit"].default:focus,
+.button.default:hover,
+input[type="submit"].default:hover {
+  background: var(--default-button-hover-bg);
+}
+
+a:link,
+a:visited {
+  color: var(--link-fg);
+}
+
+#changelist-filter h2 {
+  background: var(--secondary);
+}
+
+.object-tools a:link,
+.object-tools a:visited {
+  background: var(--object-tools-bg);
+}
+
+.object-tools a:focus,
+.object-tools a:hover {
+  background: var(--object-tools-hover-bg);
+}

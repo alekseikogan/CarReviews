@@ -2,6 +2,10 @@ from django.contrib import admin
 
 from .models import Body, Car, Comment, Mark
 
+admin.site.site_header = 'DriveLog Admin'
+admin.site.site_title = 'DriveLog'
+admin.site.index_title = 'Управление сайтом'
+
 
 class CarAdmin(admin.ModelAdmin):
     list_display = (

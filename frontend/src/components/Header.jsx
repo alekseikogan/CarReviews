@@ -33,6 +33,11 @@ export default function Header() {
         </nav>
 
         <div className="header__controls">
+          {(user?.is_superuser || user?.is_staff) && (
+            <a href="/admin/" className="nav__link nav__link--admin">
+              {t.admin}
+            </a>
+          )}
           <NavLink
             to={isAuthenticated ? '/account' : '/login'}
             className={({ isActive }) => `nav__link nav__link--account${isActive ? ' nav__link--active' : ''}`}
