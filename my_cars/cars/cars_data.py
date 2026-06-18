@@ -76,7 +76,7 @@ CARS = [
     ('Haval', 'H3', '', 'suv', 2024, ''),
     ('Haval', 'Jolion', '', 'crossover', 2022, ''),
     ('Haval', 'Fx7', '', 'crossover', 2023, ''),
-    ('Honda', 'Accord', '', 'sedan', 2018, ''),
+    ('Honda', 'Torneo', '', 'sedan', 1999, ''),
     ('Hyundai', 'Solaris', '1.4 AT Sedan', 'sedan', 2016, ''),
     ('Hyundai', 'Solaris', '1.6 AT Sedan Рестайлинг', 'sedan', 2018, ''),
     ('Hyundai', 'Grand Starex', '', 'minivan', 2015, ''),
