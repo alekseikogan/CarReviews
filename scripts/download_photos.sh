@@ -1,4 +1,5 @@
 #!/bin/sh
+# Привязать локальные фото из media/cars/
 set -e
 cd "$(dirname "$0")/../my_cars"
 

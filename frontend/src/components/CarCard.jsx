@@ -13,11 +13,11 @@ export default function CarCard({ car }) {
       <div className="car-card__image-wrap">
         <img
           className="car-card__image"
-          src={car.photo_display}
+          src={car.photo_display || fallbackPhoto()}
           alt={`${car.mark.name} ${title}`}
           loading="lazy"
           onError={(e) => {
-            e.target.src = fallbackPhoto(car);
+            e.target.src = fallbackPhoto();
           }}
         />
         <span className="car-card__year">{car.year}</span>

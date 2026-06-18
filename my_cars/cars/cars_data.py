@@ -26,9 +26,6 @@ def _desc(mark, model, complect, body, year, note=''):
     )
 
 
-from cars.photo_urls import photo_url  # noqa: F401 — re-export
-
-
 CARS = [
     ('Audi', 'A3', '1.4 AT', 'hatchback', 2018, ''),
     ('Audi', 'A4', 'B8', 'sedan', 2014, ''),

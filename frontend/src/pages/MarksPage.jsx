@@ -41,7 +41,6 @@ export default function MarksPage() {
             title={mark.name}
             subtitle={t.carsCount(mark.car_count)}
             image={mark.cover_photo}
-            imageSeed={mark.id}
           />
         ))}
       </div>

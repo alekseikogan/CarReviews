@@ -3,12 +3,12 @@ from rest_framework import serializers
 from .models import Body, Car, Mark
 
 
-def _car_photo(car):
-    if not car:
+def _car_photo(car, request=None):
+    if not car or not car.photo:
         return None
-    if car.photo:
-        return car.photo.url
-    return car.photo_url or None
+    if request:
+        return request.build_absolute_uri(car.photo.url)
+    return car.photo.url
 
 
 class BodyBriefSerializer(serializers.ModelSerializer):
@@ -32,8 +32,9 @@ class BodySerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'slug', 'car_count', 'cover_photo')
 
     def get_cover_photo(self, obj):
-        car = obj.cars.exclude(photo_url='').first() or obj.cars.first()
-        return _car_photo(car)
+        request = self.context.get('request')
+        car = obj.cars.exclude(photo='').first() or obj.cars.first()
+        return _car_photo(car, request)
 
 
 class MarkSerializer(serializers.ModelSerializer):
@@ -45,8 +46,9 @@ class MarkSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'slug', 'car_count', 'cover_photo')
 
     def get_cover_photo(self, obj):
-        car = obj.cars.exclude(photo_url='').first() or obj.cars.first()
-        return _car_photo(car)
+        request = self.context.get('request')
+        car = obj.cars.exclude(photo='').first() or obj.cars.first()
+        return _car_photo(car, request)
 
 
 class CarListSerializer(serializers.ModelSerializer):
@@ -62,12 +64,8 @@ class CarListSerializer(serializers.ModelSerializer):
         )
 
     def get_photo_display(self, obj):
-        if obj.photo:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.photo.url)
-            return obj.photo.url
-        return obj.photo_url
+        request = self.context.get('request')
+        return _car_photo(obj, request)
 
 
 class CarDetailSerializer(CarListSerializer):

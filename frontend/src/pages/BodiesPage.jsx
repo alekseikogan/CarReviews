@@ -42,7 +42,6 @@ export default function BodiesPage() {
             title={getBodyName(body, lang)}
             subtitle={t.carsCount(body.car_count)}
             image={body.cover_photo}
-            imageSeed={body.id}
           />
         ))}
       </div>

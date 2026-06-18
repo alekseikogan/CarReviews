@@ -53,10 +53,10 @@ export default function CarDetailPage() {
       <div className="car-detail__hero">
         <img
           className="car-detail__image"
-          src={car.photo_display}
+          src={car.photo_display || fallbackPhoto()}
           alt={`${car.mark.name} ${title}`}
           onError={(e) => {
-            e.target.src = fallbackPhoto(car);
+            e.target.src = fallbackPhoto();
           }}
         />
       </div>
