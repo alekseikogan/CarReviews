@@ -92,11 +92,6 @@ class Car(models.Model):
         null=True,
         verbose_name='Фото',
     )
-    photo_url = models.URLField(
-        max_length=500,
-        blank=True,
-        verbose_name='URL фото',
-    )
     time_create = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Дата добавления')

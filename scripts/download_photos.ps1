@@ -1,4 +1,4 @@
-# Скачать все фото в media/cars/
+# Привязать локальные фото из media/cars/
 param(
     [switch]$Force
 )

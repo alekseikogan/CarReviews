@@ -50,11 +50,13 @@ class Command(BaseCommand):
             self.stdout.write(self.style.WARNING(
                 'Данные уже есть. Используйте --force для перезагрузки',
             ))
-            call_command('download_car_photos', '--link-only')
-            missing = _cars_missing_photo_files()
-            if missing:
-                self.stdout.write(f'Скачивание отсутствующих фото ({missing})...')
+            if not options['skip_photos']:
                 call_command('download_car_photos')
+                missing = _cars_missing_photo_files()
+                if missing:
+                    self.stdout.write(self.style.WARNING(
+                        f'Локальных фото не найдено для {missing} автомобилей',
+                    ))
             return
 
         if options['force']:
@@ -67,8 +69,9 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f'Импортировано из {input_path}'))
 
         if not options['skip_photos']:
-            call_command('download_car_photos', '--link-only')
+            call_command('download_car_photos')
             missing = _cars_missing_photo_files()
             if missing:
-                self.stdout.write(f'Скачивание отсутствующих фото ({missing})...')
-                call_command('download_car_photos')
+                self.stdout.write(self.style.WARNING(
+                    f'Локальных фото не найдено для {missing} автомобилей',
+                ))

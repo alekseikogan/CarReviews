@@ -72,7 +72,7 @@ python manage.py import_cars              # импорт из fixtures/cars.json
 python manage.py import_cars --force      # пересоздать БД из fixture
 
 python manage.py generate_fixture         # пересобрать cars.json из cars_data.py
-python manage.py download_car_photos      # скачать фото в media/cars/
+python manage.py download_car_photos      # привязать фото из media/cars/
 python manage.py download_car_photos --force
 python manage.py export_cars              # экспорт БД → fixtures/cars.json
 ```
@@ -83,7 +83,7 @@ python manage.py export_cars              # экспорт БД → fixtures/car
 .\scripts\import_data.ps1           # импорт
 .\scripts\import_data.ps1 -Force
 .\scripts\export_data.ps1           # экспорт
-.\scripts\download_photos.ps1       # скачать все фото
+.\scripts\download_photos.ps1       # привязать локальные фото
 ```
 
 ```bash

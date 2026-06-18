@@ -6,7 +6,6 @@ from django.core.management.base import BaseCommand
 from django.utils.text import slugify
 
 from cars.cars_data import BODY_TYPES, CARS, _desc
-from cars.photo_urls import photo_url
 
 
 class Command(BaseCommand):
@@ -54,7 +53,6 @@ class Command(BaseCommand):
 
             car_pk += 1
             description = _desc(mark_name, model, complect, body_slug, year, note, index=idx)
-            remote_url = photo_url(idx, mark_name, model, year, complect)
 
             items.append({
                 'model': 'cars.car',
@@ -68,7 +66,6 @@ class Command(BaseCommand):
                     'description': description,
                     'year': year,
                     'photo': f'cars/{car_slug}.jpg',
-                    'photo_url': remote_url,
                     'time_create': created,
                 },
             })

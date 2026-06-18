@@ -369,12 +369,13 @@ img {
 .tile-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.35s ease;
 }
 
 .tile-card:hover .tile-card__image {
-  transform: scale(1.06);
+  transform: none;
 }
 
 .tile-card__body {
@@ -506,12 +507,13 @@ img {
 .car-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
 .car-card:hover .car-card__image {
-  transform: scale(1.05);
+  transform: none;
 }
 
 .car-card__year {

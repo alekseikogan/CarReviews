@@ -2,7 +2,6 @@ from django.core.management.base import BaseCommand
 from django.utils.text import slugify
 
 from cars.cars_data import BODY_TYPES, CARS, _desc
-from cars.photo_urls import photo_url
 from cars.models import Body, Car, Mark
 
 
@@ -15,28 +14,8 @@ class Command(BaseCommand):
             action='store_true',
             help='Пересоздать данные (удалить существующие записи)',
         )
-        parser.add_argument(
-            '--update-photos',
-            action='store_true',
-            help='Обновить URL фотографий у существующих записей',
-        )
 
     def handle(self, *args, **options):
-        if options['update_photos']:
-            updated = 0
-            for idx, car in enumerate(
-                Car.objects.select_related('mark').order_by('id'),
-                start=1,
-            ):
-                car.photo_url = photo_url(
-                    car.id, car.mark.name, car.model, car.year, car.complect,
-                )
-                car.save(update_fields=['photo_url'])
-                updated += 1
-            self.stdout.write(self.style.SUCCESS(f'Обновлено фото: {updated}'))
-            if not options['force']:
-                return
-
         if options['force']:
             Car.objects.all().delete()
             Mark.objects.all().delete()
@@ -44,7 +23,9 @@ class Command(BaseCommand):
             self.stdout.write(self.style.WARNING('Существующие данные удалены'))
 
         if Car.objects.exists() and not options['force']:
-            self.stdout.write(self.style.WARNING('Данные уже загружены. Используйте --force для перезагрузки'))
+            self.stdout.write(self.style.WARNING(
+                'Данные уже загружены. Используйте --force для перезагрузки',
+            ))
             return
 
         bodies = {}
@@ -80,7 +61,7 @@ class Command(BaseCommand):
                 body=bodies[body_slug],
                 description=description,
                 year=year,
-                photo_url=photo_url(idx, mark_name, model, year, complect),
+                photo=f'cars/{slug}.jpg',
             )
             created_count += 1
 
