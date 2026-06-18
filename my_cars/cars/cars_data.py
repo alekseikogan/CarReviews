@@ -116,7 +116,6 @@ CARS = [
     ('Mercedes', 'SLK', '250 AMG', 'cabrio', 2014, ''),
     ('Mercedes', 'S400L', '', 'sedan', 2016, ''),
     ('Mini', 'Cooper', '5D', 'hatchback', 2017, ''),
-    ('Mazda', '3', '', 'hatchback', 2018, ''),
     ('Mazda', 'MX-5', '(Макс)', 'cabrio', 2019, ''),
     ('Mitsubishi', 'Pajero', '2002 рестайлинг', 'suv', 2005, ''),
     ('Nissan', 'Juke', '', 'crossover', 2015, ''),
